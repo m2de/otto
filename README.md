@@ -50,6 +50,12 @@ Otto works with the Anthropic API, Amazon Bedrock, and Google Vertex AI. If you'
 - Prompt suggestions, slash command autocomplete, and image attachments
 - Change model, permission mode, and reasoning effort mid-session
 
+### Visual Previews
+
+- When Claude presents options or asks questions, Otto renders fully interactive HTML previews directly in the dashboard
+- See UI mockups, architecture diagrams, and design options as actual rendered visuals — not markdown descriptions
+- Quickly verify your agent understands the task before it starts building
+
 ### Git & GitHub
 
 - Built-in git panel: branch status, pull, push, fetch, stash, commit history

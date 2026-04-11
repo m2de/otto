@@ -86,7 +86,6 @@ Otto works with the Anthropic API, Amazon Bedrock, and Google Vertex AI. If you'
 
 ### Built-In Tools
 
-- Embedded browser panel with navigation and URL history
 - Terminal and process runner
 - Detailed context usage breakdown with token counts by category
 - SDK recording and debugging tools

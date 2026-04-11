@@ -23,7 +23,7 @@ Otto replaces that with a dashboard that surfaces everything at a glance. Sessio
 
 On top of that, Otto provides deep GitHub integration — launch agents directly from issues, PRs, and discussions, manage worktrees, and track CI runs. Plus webhook and cron automations that trigger agent sessions automatically, so your agents can respond to events without you being there.
 
-Otto works with the Anthropic API, Amazon Bedrock, and Google Vertex AI. If you're on Bedrock or Vertex and don't have access to Claude's native apps, Otto gives you the same experience regardless of your provider.
+Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure AI Foundry. If you're on Bedrock, Vertex, or Azure and don't have access to Claude's native apps, Otto gives you the same experience regardless of your provider.
 
 ## Features
 
@@ -41,6 +41,12 @@ Otto works with the Anthropic API, Amazon Bedrock, and Google Vertex AI. If you'
 - "Now Playing" header showing the agent's current activity at a glance
 - File checkpoint and rewind system with visual diff preview before confirming
 - Transcript annotations — highlight text and attach comments as context for the next prompt
+
+### Quick Chat
+
+- Floating "btw" panel for quick, read-only questions about your codebase — no need to create a full session
+- Pre-warmed for near-instant responses
+- Open with `Cmd+.` / `Ctrl+.`, supports multi-turn conversations
 
 ### Agent Control
 
@@ -125,7 +131,7 @@ Otto works with the Anthropic API, Amazon Bedrock, and Google Vertex AI. If you'
 - **14-day free trial** — no payment details required
 - **30-day money-back guarantee** — no questions asked
 
-> **Note:** Otto is the dashboard. You bring your own API access — Anthropic API, Amazon Bedrock, or Google Vertex AI.
+> **Note:** Otto is the dashboard. You bring your own API access — Anthropic API, Amazon Bedrock, Google Vertex AI, or Azure AI Foundry.
 
 ## Requirements
 
@@ -134,6 +140,7 @@ Otto works with the Anthropic API, Amazon Bedrock, and Google Vertex AI. If you'
   - An [Anthropic API key](https://console.anthropic.com/)
   - [Amazon Bedrock](https://aws.amazon.com/bedrock/) access with Claude enabled
   - [Google Vertex AI](https://cloud.google.com/vertex-ai) access with Claude enabled
+  - [Azure AI Foundry](https://ai.azure.com/) access with Claude enabled
 
 ## Support
 

@@ -1,0 +1,151 @@
+<div align="center">
+
+# Otto
+
+**A desktop dashboard for managing Claude agent sessions.**
+
+Less noise. More visibility. Full control.
+
+[Download](#download) · [Features](#features) · [Pricing](#pricing) · [Getting Started](#getting-started)
+
+<!-- Replace with actual screenshot before launch -->
+<!-- ![Otto Dashboard](docs/assets/hero-screenshot.png) -->
+
+</div>
+
+---
+
+## What is Otto?
+
+CLI agents are noisy. Scrolling chat logs make it hard to see what actually happened — which files changed, what decisions were made, how much it cost. When you're running multiple agents across different projects, keeping track of everything through terminal windows becomes a constant drain on your attention.
+
+Otto replaces that with a dashboard that surfaces everything at a glance. Session status, file diffs, tool usage, costs, tasks, and context usage — all visible without scrolling through conversation history. It's a power user tool: less noise, more visibility, less effort to stay on top of what your agents are doing.
+
+On top of that, Otto provides deep GitHub integration — launch agents directly from issues, PRs, and discussions, manage worktrees, and track CI runs. Plus webhook and cron automations that trigger agent sessions automatically, so your agents can respond to events without you being there.
+
+Built with Electron and the Claude Agent SDK. Powered by Claude.
+
+## Features
+
+### Multi-Session Management
+
+- Launch and monitor multiple agent sessions simultaneously from a single dashboard
+- Fleet-level inbox with status grouping: working, blocked, done, error, idle
+- "Needs action" view surfaces sessions that require human input
+- Session pinning, forking, renaming, and history replay
+- Filter and search across all sessions
+
+### Real-Time Transcripts
+
+- Live streaming transcripts with rich content types — code, files, tool calls, thinking blocks
+- "Now Playing" header showing the agent's current activity at a glance
+- File checkpoint and rewind system with visual diff preview before confirming
+- Transcript annotations — highlight text and attach comments as context for the next prompt
+
+### Agent Control
+
+- Granular session configuration: permission modes, thinking budgets, cost limits, turn limits, sandbox mode, tool restrictions, structured output, and more
+- Interactive permission and plan approval with visual previews
+- Follow-up message queueing while agents are working
+- Prompt suggestions, slash command autocomplete, and image attachments
+- Change model, permission mode, and reasoning effort mid-session
+
+### Git & GitHub
+
+- Built-in git panel: branch status, pull, push, fetch, stash, commit history
+- GitHub panel with Issues, Pull Requests, Discussions, CI Runs, and Tags
+- One-click "Launch Agent" from any GitHub item — automatically creates a worktree
+- Full worktree lifecycle management with batch operations and safety checks
+- Self-assignment on issues, label filtering, fuzzy search
+
+### Automation
+
+- **Webhook automations** — markdown-based rules triggered by GitHub events, with event/action/repo/sender matching and template expansion
+- **Cron automations** — scheduled agent sessions using cron expressions, with template expansion and manual trigger support
+- Live webhook event feed with one-click automation creation from any event
+- Per-automation session configuration (model, permissions, worktree, sandbox, budget, and more)
+
+### Fleet Management
+
+- Inbox panel with a fleet-level overview of all running agents
+- Status grouping: working, blocked, done, error, idle — with counts
+- "Needs action" section groups all sessions waiting for human input
+- Quick access to recently completed sessions
+
+### Multi-Project Support
+
+- Project picker with automatic git repository scanning
+- Project rail for switching between repositories
+- Multi-repo projects — a single project can contain multiple git repositories
+
+### Built-In Tools
+
+- Embedded browser panel with navigation and URL history
+- Terminal and process runner
+- Detailed context usage breakdown with token counts by category
+- SDK recording and debugging tools
+- Mobile-responsive layout
+
+## Download
+
+> **Coming soon.** Otto is currently in development. Watch this repo to be notified when downloads are available.
+
+<!-- Replace with actual download links before launch:
+| Platform | Download |
+|----------|----------|
+| macOS (Apple Silicon) | [Otto-x.x.x-arm64.dmg](#) |
+| macOS (Intel) | [Otto-x.x.x-x64.dmg](#) |
+| Windows | [Otto-x.x.x-setup.exe](#) |
+| Linux | [Otto-x.x.x.AppImage](#) |
+-->
+
+## Getting Started
+
+1. **Download and install** Otto from the links above
+2. **Open Otto** — it starts a local server and opens the dashboard
+3. **Select a project** — Otto scans for git repositories and lets you pick one
+4. **Create a session** — configure permissions, thinking budget, and tools, then launch your first agent
+5. **Watch it work** — follow the real-time transcript, approve permissions when asked, and queue follow-up messages
+
+Otto requires [Claude](https://claude.ai/) to be installed and authenticated on your machine.
+
+## Pricing
+
+<div align="center">
+
+**One plan. Every feature. No tiers.**
+
+### £25/month or £200/year
+
+</div>
+
+- Every feature included from day one — no upsells, no feature gating
+- **14-day free trial** — no payment details required
+- **30-day money-back guarantee** — no questions asked
+
+> **Note:** Otto is the dashboard. You still need your own [Anthropic API key](https://console.anthropic.com/) or Claude subscription for the underlying AI usage.
+
+## Requirements
+
+- macOS 12 or later (Apple Silicon or Intel)
+- [Claude](https://claude.ai/) installed and authenticated
+- An Anthropic API key or active Claude subscription
+
+## Support
+
+- **Bug reports** — [Open an issue](https://github.com/m2de/otto/issues/new?template=bug_report.md)
+- **Feature requests** — [Open an issue](https://github.com/m2de/otto/issues/new?template=feature_request.md)
+- **Questions & discussion** — [Start a discussion](https://github.com/m2de/otto/discussions)
+
+## Links
+
+- [Claude documentation](https://docs.anthropic.com/)
+- [Anthropic](https://anthropic.com)
+
+---
+
+<div align="center">
+
+Made by [m2de](https://github.com/m2de)
+
+</div>

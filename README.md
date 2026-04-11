@@ -23,7 +23,7 @@ Otto replaces that with a dashboard that surfaces everything at a glance. Sessio
 
 On top of that, Otto provides deep GitHub integration — launch agents directly from issues, PRs, and discussions, manage worktrees, and track CI runs. Plus webhook and cron automations that trigger agent sessions automatically, so your agents can respond to events without you being there.
 
-Built with Electron and the Claude Agent SDK. Powered by Claude.
+Otto works with the Anthropic API, Amazon Bedrock, and Google Vertex AI. If you're on Bedrock or Vertex and don't have access to Claude's native apps, Otto gives you the same experience regardless of your provider.
 
 ## Features
 
@@ -102,12 +102,10 @@ Built with Electron and the Claude Agent SDK. Powered by Claude.
 ## Getting Started
 
 1. **Download and install** Otto from the links above
-2. **Open Otto** — it starts a local server and opens the dashboard
+2. **Open Otto** — the dashboard opens automatically
 3. **Select a project** — Otto scans for git repositories and lets you pick one
 4. **Create a session** — configure permissions, thinking budget, and tools, then launch your first agent
 5. **Watch it work** — follow the real-time transcript, approve permissions when asked, and queue follow-up messages
-
-Otto requires [Claude](https://claude.ai/) to be installed and authenticated on your machine.
 
 ## Pricing
 
@@ -123,13 +121,15 @@ Otto requires [Claude](https://claude.ai/) to be installed and authenticated on 
 - **14-day free trial** — no payment details required
 - **30-day money-back guarantee** — no questions asked
 
-> **Note:** Otto is the dashboard. You still need your own [Anthropic API key](https://console.anthropic.com/) or Claude subscription for the underlying AI usage.
+> **Note:** Otto is the dashboard. You bring your own API access — Anthropic API, Amazon Bedrock, or Google Vertex AI.
 
 ## Requirements
 
 - macOS 12 or later (Apple Silicon or Intel)
-- [Claude](https://claude.ai/) installed and authenticated
-- An Anthropic API key or active Claude subscription
+- One of the following:
+  - An [Anthropic API key](https://console.anthropic.com/)
+  - [Amazon Bedrock](https://aws.amazon.com/bedrock/) access with Claude enabled
+  - [Google Vertex AI](https://cloud.google.com/vertex-ai) access with Claude enabled
 
 ## Support
 

@@ -90,6 +90,13 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Project rail for switching between repositories
 - Multi-repo projects — a single project can contain multiple git repositories
 
+### Plugins & Marketplace
+
+- Browse and install plugins from marketplace sources
+- Enable, disable, and configure plugins at user, project, or local level
+- Add marketplace sources from GitHub, npm, git, URL, file, or directory
+- Trust and security controls: strict mode, blocked sources, and custom trust messages
+
 ### Built-In Tools
 
 - Detailed context usage breakdown with token counts by category

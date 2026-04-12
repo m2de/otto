@@ -6,4 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+
+- Plugins & Marketplace panel for browsing, installing, and configuring plugins from marketplace sources
+
+### Other
+
 - Initial release in development

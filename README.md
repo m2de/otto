@@ -2,6 +2,8 @@
 
 # Otto
 
+<img src="docs/assets/logo.png" width="512" alt="Otto logo" />
+
 **A desktop dashboard for managing Claude agent sessions.**
 
 Less noise. More visibility. Full control.
@@ -17,13 +19,11 @@ Less noise. More visibility. Full control.
 
 ## What is Otto?
 
-CLI agents are noisy. Scrolling chat logs make it hard to see what actually happened — which files changed, what decisions were made, how much it cost. When you're running multiple agents across different projects, keeping track of everything through terminal windows becomes a constant drain on your attention.
+Otto is a desktop dashboard for professional developers who run multiple Claude agents simultaneously. It replaces noisy terminal logs with a clean, real-time overview — session status, file diffs, costs, and tasks all visible at a glance. Less scrolling, more doing.
 
-Otto replaces that with a dashboard that surfaces everything at a glance. Session status, file diffs, tool usage, costs, tasks, and context usage — all visible without scrolling through conversation history. It's a power user tool: less noise, more visibility, less effort to stay on top of what your agents are doing.
+It's built around GitHub. Launch agents from issues, PRs, and discussions, manage worktrees, and automate sessions with webhooks and cron triggers — so your agents can respond to events without you being there.
 
-On top of that, Otto provides deep GitHub integration — launch agents directly from issues, PRs, and discussions, manage worktrees, and track CI runs. Plus webhook and cron automations that trigger agent sessions automatically, so your agents can respond to events without you being there.
-
-Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure AI Foundry. If you're on Bedrock, Vertex, or Azure and don't have access to Claude's native apps, Otto gives you the same experience regardless of your provider.
+Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure AI Foundry. If you're on Bedrock, Vertex, or Azure and don't have access to Claude's native apps, Otto gives you a first-class experience regardless of your provider.
 
 ## Features
 
@@ -136,8 +136,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 </div>
 
 - Every feature included from day one — no upsells, no feature gating
-- **14-day free trial** — no payment details required
-- **30-day money-back guarantee** — no questions asked
+- **14-day free trial**
 
 > **Note:** Otto is the dashboard. You bring your own API access — Anthropic API, Amazon Bedrock, Google Vertex AI, or Azure AI Foundry.
 

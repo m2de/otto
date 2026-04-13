@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- Automatic updates — Otto checks for new versions in the background and prompts to restart when ready
 - Plugins & Marketplace panel for browsing, installing, and configuring plugins from marketplace sources
 
 ### Other

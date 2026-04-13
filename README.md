@@ -99,6 +99,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 
 ### Built-In Tools
 
+- Automatic updates with in-app download and restart
 - Detailed context usage breakdown with token counts by category
 - SDK recording and debugging tools
 - Mobile-responsive layout

@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-04-13
+
 ### Added
 
 - Automatic updates — Otto checks for new versions in the background and prompts to restart when ready

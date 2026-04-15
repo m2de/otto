@@ -64,7 +64,9 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 
 ### Git & GitHub
 
-- Built-in git panel: branch status, pull, push, fetch, stash, commit history
+- Built-in git panel with branch switching, inline diff viewer, pull, push, fetch, stash, and commit history
+- Branch list with ahead/behind divergence counts and one-click checkout
+- Worktree overview showing linked agent sessions per worktree
 - GitHub panel with Issues, Pull Requests, Discussions, CI Runs, and Tags
 - One-click "Launch Agent" from any GitHub item — automatically creates a worktree
 - Full worktree lifecycle management with batch operations and safety checks

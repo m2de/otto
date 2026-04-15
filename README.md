@@ -37,7 +37,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 
 ### Real-Time Transcripts
 
-- Live streaming transcripts with rich content types — code, files, tool calls, thinking blocks
+- Live streaming transcripts with rich content types — code, files, tool calls, thinking blocks, memory recalls
 - "Now Playing" header showing the agent's current activity at a glance
 - File checkpoint and rewind system with visual diff preview before confirming
 - Transcript annotations — highlight text and attach comments as context for the next prompt

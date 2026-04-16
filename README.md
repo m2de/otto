@@ -8,7 +8,7 @@
 
 Less noise. More visibility. Full control.
 
-[Download](#download) · [Features](#features) · [Pricing](#pricing) · [Getting Started](#getting-started)
+[Download](#download) · [Features](#features) · [Beta Access](#beta-access) · [Getting Started](#getting-started)
 
 <!-- Replace with actual screenshot before launch -->
 <!-- ![Otto Dashboard](docs/assets/hero-screenshot.png) -->
@@ -127,18 +127,11 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 4. **Create a session** — configure permissions, thinking budget, and tools, then launch your first agent
 5. **Watch it work** — follow the real-time transcript, approve permissions when asked, and queue follow-up messages
 
-## Pricing
+## Beta Access
 
-<div align="center">
+Otto is currently in closed beta. You can download and install it, but you'll need a licence key to use it.
 
-**One plan. Every feature. No tiers.**
-
-### £25/month or £200/year
-
-</div>
-
-- Every feature included from day one — no upsells, no feature gating
-- **14-day free trial**
+If you'd like to try Otto, [open a discussion](https://github.com/m2de/otto/discussions) or reach out directly to request access.
 
 > **Note:** Otto is the dashboard. You bring your own API access — Anthropic API, Amazon Bedrock, Google Vertex AI, or Azure AI Foundry.
 

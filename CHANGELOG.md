@@ -10,4 +10,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - Automatic updates — Otto checks for new versions in the background and prompts to restart when ready
 - Plugins & Marketplace panel for browsing, installing, and configuring plugins from marketplace sources
-- Memory panel — see which memory files Claude loaded during a session, split by personal and team scope
+- Skill and slash command output now visible in transcripts
+- Closed beta access model with free beta plan
+
+### Fixed
+
+- Session renames now persist through catchup replay
+- Subagent status no longer goes stale after task updates

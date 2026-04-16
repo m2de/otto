@@ -62,6 +62,13 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - See UI mockups, architecture diagrams, and design options as actual rendered visuals — not markdown descriptions
 - Quickly verify your agent understands the task before it starts building
 
+### In-App Browser
+
+- Agents can open any web page directly from a session for you to review
+- Annotation overlay lets you highlight elements on the page, add comments, and send structured feedback back to the agent
+- Element screenshots and selectors are included in the feedback so the agent knows exactly what you're referring to
+- Browser status card in the dashboard with one-click close
+
 ### Git & GitHub
 
 - Built-in git panel with branch switching, inline diff viewer, pull, push, fetch, stash, and commit history

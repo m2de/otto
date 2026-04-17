@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - In-app browser — agents can open web pages for you to review with element-level annotation and feedback
+- Sub-agent improvements — colour-coded agent types, modal detail view, and clickable sidebar entries
 
 ## [0.3.0] - 2026-04-16
 

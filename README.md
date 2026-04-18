@@ -42,6 +42,14 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - File checkpoint and rewind system with visual diff preview before confirming
 - Transcript annotations — highlight text and attach comments as context for the next prompt
 
+### Session Views
+
+- Three alternative session visualisations beyond the standard dashboard: Neural Pulse, Mission Timeline, and Cockpit HUD
+- **Neural Pulse** — living organism canvas with tool invocations as constellation bubbles, zoomable and pannable, with sub-agent satellites
+- **Mission Timeline** — mission control layout with parallel activity tracks, draggable minimap, and click-to-inspect detail panel
+- **Cockpit HUD** — flight instrument aesthetic with context gauge, tool radar, cost readouts, and transcript message cycling
+- View picker toggle with persistent selection across sessions
+
 ### Quick Chat
 
 - Floating "btw" panel for quick, read-only questions about your codebase — no need to create a full session

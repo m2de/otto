@@ -9,6 +9,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - Command Centre — three alternative session views (Neural Pulse, Mission Timeline, Cockpit HUD) with floating action bar and shared modal orchestration
+
+### Improved
+
+- Neural Pulse activity graph — concentric temporal rings replace spiral layout, tiered rendering supports 300+ tool calls, sub-agent connectivity with mini-bubble orbits, and smooth layout transitions
 - In-app browser — agents can open web pages for you to review with element-level annotation and feedback
 - In-app feedback tool — annotate UI elements and submit bug reports directly from the dashboard
 - Sub-agent improvements — colour-coded agent types, modal detail view, and clickable sidebar entries

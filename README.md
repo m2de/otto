@@ -62,6 +62,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Interactive permission and plan approval with visual previews
 - Follow-up message queueing while agents are working
 - Prompt suggestions, slash command autocomplete, and image attachments
+- Hooks management — view, create, edit, and delete hooks across user, project, and local settings with full lifecycle event coverage
 - Change model, permission mode, and reasoning effort mid-session
 
 ### Visual Previews

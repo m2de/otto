@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - In-app browser — agents can open web pages for you to review with element-level annotation and feedback
 - In-app feedback tool — annotate UI elements and submit bug reports directly from the dashboard
 - Sub-agent improvements — colour-coded agent types, modal detail view, and clickable sidebar entries
+- Hooks management — view, create, edit, and delete hooks across user, project, and local settings levels
 
 ## [0.3.0] - 2026-04-16
 

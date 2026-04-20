@@ -12,7 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Improved
 
-- Neural Pulse activity graph — concentric temporal rings replace spiral layout, tiered rendering supports 300+ tool calls, sub-agent connectivity with mini-bubble orbits, and smooth layout transitions
+- Neural Pulse activity graph — causal tree layout showing prompt→thinking→tool relationships, tiered rendering supports 300+ tool calls, sub-agents integrated as tree branches, and smooth layout transitions
 - In-app browser — now embedded directly in the session panel with a resizable viewport and toolbar, replacing the separate browser window
 - In-app feedback tool — annotate UI elements and submit bug reports directly from the dashboard
 - Sub-agent improvements — colour-coded agent types, modal detail view, and clickable sidebar entries

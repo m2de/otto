@@ -74,7 +74,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 ### In-App Browser
 
 - Agents can open web pages directly inside the session panel for you to review — no separate window needed
-- Resizable browser panel with toolbar controls for reload and close
+- Resizable browser panel with device viewport presets (mobile, tablet, desktop), fullscreen expand, and toolbar controls
 - Annotation overlay lets you highlight elements on the page, add comments, and send structured feedback back to the agent
 - Element screenshots and selectors are included in the feedback so the agent knows exactly what you're referring to
 

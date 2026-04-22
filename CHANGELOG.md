@@ -11,6 +11,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Command Centre — three alternative session views (Neural Pulse, Mission Timeline, Cockpit HUD) with floating action bar and shared modal orchestration
 - Provider Profiles — configure and switch between API providers from within the dashboard, with environment isolation and auto-detection of existing credentials
 
+### Fixed
+
+- Sub-agent activity no longer leaks into the main transcript — the "Hide sub-agents" toggle works correctly
+
 ### Improved
 
 - Git panel — overhauled into a developer command centre with branch switcher (fuzzy search), sync status bar, staged/modified/untracked file grouping, inline diff expansion, and rebase support

@@ -15,6 +15,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Fixed
 
 - Sub-agent activity no longer leaks into the main transcript — the "Hide sub-agents" toggle works correctly
+- Annotation tool keyboard events no longer leak into the host page — typing in the feedback textarea works correctly
 
 ### Improved
 

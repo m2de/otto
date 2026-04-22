@@ -63,6 +63,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Follow-up message queueing while agents are working
 - Prompt suggestions, slash command autocomplete, and image attachments
 - Hooks management — view, create, edit, and delete hooks across user, project, and local settings with full lifecycle event coverage
+- Provider profiles — configure and switch between API providers, with environment isolation and auto-detection of existing credentials
 - Change model, permission mode, and reasoning effort mid-session
 
 ### Visual Previews

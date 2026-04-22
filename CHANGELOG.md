@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - Command Centre — three alternative session views (Neural Pulse, Mission Timeline, Cockpit HUD) with floating action bar and shared modal orchestration
 - Provider Profiles — configure and switch between API providers from within the dashboard, with environment isolation and auto-detection of existing credentials
+- Transcript tool activity toggle — show or hide tool calls, file reads, searches, and hooks to reduce noise in the live transcript
 
 ### Fixed
 

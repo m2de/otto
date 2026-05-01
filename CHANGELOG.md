@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+
+- Session search — fuzzy search input in the session list, filtering by title, branch, worktree, and initial prompt; composes with status filters
+
 ### Improved
 
 - Auto-updater — pre-release channel support with tray toggle; RC versions automatically receive pre-release updates

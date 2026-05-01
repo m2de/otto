@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Improved
 
+- Sub-agent modal — live metadata updates, conversation auto-scroll with sticky scroll-to-bottom, and full response display without truncation
 - Auto-updater — pre-release channel support with tray toggle; RC versions automatically receive pre-release updates
 
 ## [0.4.0] - 2026-04-24

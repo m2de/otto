@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
-- Stage — tiered session overview (Needs Attention, Working, Inactive) replacing the fleet inbox for clearer prioritisation at a glance
+- Stage — tiered session overview (Needs Attention, Working, Idle, Inactive) replacing the fleet inbox for clearer prioritisation at a glance
 - Git dashboard — interactive branch spine with ahead/behind indicators and dedicated branch detail pages (changes, commits, status)
 - Session search — fuzzy search input in the session list, filtering by title, branch, worktree, and initial prompt; composes with status filters
 

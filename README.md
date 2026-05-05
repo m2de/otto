@@ -30,8 +30,8 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 ### Multi-Session Management
 
 - Launch and monitor multiple agent sessions simultaneously from a single dashboard
-- Fleet-level inbox with status grouping: working, blocked, done, error, idle
-- "Needs action" view surfaces sessions that require human input
+- Stage overview with tiered session grouping: Needs Attention, Working, and Inactive
+- Sessions requiring human input are surfaced at the top automatically
 - Session pinning, forking, renaming, and history replay
 - Filter and search across all sessions
 
@@ -81,8 +81,9 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 
 ### Git & GitHub
 
-- Built-in git panel with branch switching, inline diff viewer, pull, push, fetch, stash, and commit history
-- Branch list with ahead/behind divergence counts and one-click checkout
+- Interactive branch visualisation with ahead/behind indicators relative to the default branch
+- Dedicated branch detail pages with Changes (diff viewer), Commits (log), and Status (PR, CI, linked sessions) tabs
+- Launch agents directly from any branch detail page — automatically creates a worktree
 - Worktree overview showing linked agent sessions per worktree
 - GitHub panel with Issues, Pull Requests, Discussions, CI Runs, and Tags
 - One-click "Launch Agent" from any GitHub item — automatically creates a worktree
@@ -96,17 +97,10 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Live webhook event feed with one-click automation creation from any event
 - Per-automation session configuration (model, permissions, worktree, sandbox, budget, and more)
 
-### Fleet Management
-
-- Inbox panel with a fleet-level overview of all running agents
-- Status grouping: working, blocked, done, error, idle — with counts
-- "Needs action" section groups all sessions waiting for human input
-- Quick access to recently completed sessions
-
 ### Multi-Project Support
 
 - Project picker with automatic git repository scanning
-- Project rail for switching between repositories
+- Quick-switch navigation between repositories
 - Multi-repo projects — a single project can contain multiple git repositories
 
 ### Plugins & Marketplace

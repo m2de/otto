@@ -8,10 +8,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- Stage — tiered session overview (Needs Attention, Working, Inactive) replacing the fleet inbox for clearer prioritisation at a glance
+- Git dashboard — interactive branch spine with ahead/behind indicators and dedicated branch detail pages (changes, commits, status)
 - Session search — fuzzy search input in the session list, filtering by title, branch, worktree, and initial prompt; composes with status filters
 
 ### Improved
 
+- Navigation — streamlined icon rail layout with direct routing to Stage, Repo, Worktrees, GitHub, Plugins, and Config
 - Sub-agent modal — live metadata updates, conversation auto-scroll with sticky scroll-to-bottom, and full response display without truncation
 - Auto-updater — pre-release channel support with tray toggle; RC versions automatically receive pre-release updates
 

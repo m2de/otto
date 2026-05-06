@@ -17,6 +17,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Navigation — streamlined icon rail layout with direct routing to Stage, Repo, Worktrees, GitHub, Plugins, and Config
 - Sub-agent modal — live metadata updates, conversation auto-scroll with sticky scroll-to-bottom, and full response display without truncation
 - Auto-updater — pre-release channel support with tray toggle; RC versions automatically receive pre-release updates
+- Worktrees — gitignored files listed in `.worktreeinclude` (e.g. `.env`) are now automatically copied into Otto-created worktrees
 
 ## [0.4.0] - 2026-04-24
 

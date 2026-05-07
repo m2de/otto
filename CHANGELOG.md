@@ -12,6 +12,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Git dashboard — interactive branch spine with ahead/behind indicators and dedicated branch detail pages (changes, commits, status)
 - Session search — fuzzy search input in the session list, filtering by title, branch, worktree, and initial prompt; composes with status filters
 
+### Fixed
+
+- Environment isolation — Otto no longer leaks a `PORT` variable into agent sessions, which previously caused user tools (Express, Next.js, test harnesses) to bind to the wrong port
+
 ### Improved
 
 - Navigation — streamlined icon rail layout with direct routing to Stage, Repo, Worktrees, GitHub, Plugins, and Config

@@ -15,6 +15,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Fixed
 
 - Environment isolation — Otto no longer leaks a `PORT` variable into agent sessions, which previously caused user tools (Express, Next.js, test harnesses) to bind to the wrong port
+- Worktrees with uncommitted changes or unpushed commits are no longer deleted when a session stops — only clean worktrees are auto-cleaned
 
 ### Improved
 

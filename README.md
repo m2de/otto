@@ -106,8 +106,9 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 
 ### Plugins & Marketplace
 
-- Browse and install plugins from marketplace sources
-- Enable, disable, and configure plugins at user, project, or local level
+- Unified browse view across all configured marketplaces — installed and available plugins side by side, no dropdown prerequisite
+- Dedicated plugin detail pages with author, repository, licence, and keywords surfaced from marketplace manifests
+- Enable, disable, and configure plugins at user, project, or local level — inline from the detail page
 - Add marketplace sources from GitHub, npm, git, URL, file, or directory
 - Trust and security controls: strict mode, blocked sources, and custom trust messages
 

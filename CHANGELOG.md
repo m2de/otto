@@ -25,6 +25,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Auto-updater — pre-release channel support with tray toggle; RC versions automatically receive pre-release updates
 - Worktrees — gitignored files listed in `.worktreeinclude` (e.g. `.env`) are now automatically copied into Otto-created worktrees
 - Permissions settings — unified rule-centric view across user, project, and local scopes, with conflict detection (duplicates, allow/deny clashes, wildcard shadowing), a guided Add Rule wizard, scope-chip move/duplicate, and bulk select with drag-and-drop
+- Plugins — unified browse view across all configured marketplaces (no per-marketplace dropdown), dedicated detail pages with author, repository, licence, and keywords, inline scope management, and visual polish matching the Stage and Repo pages
 
 ## [0.4.0] - 2026-04-24
 

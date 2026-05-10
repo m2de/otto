@@ -30,6 +30,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Permissions settings — unified rule-centric view across user, project, and local scopes, with conflict detection (duplicates, allow/deny clashes, wildcard shadowing), a guided Add Rule wizard, scope-chip move/duplicate, and bulk select with drag-and-drop
 - Plugins — unified browse view across all configured marketplaces (no per-marketplace dropdown), dedicated detail pages with author, repository, licence, and keywords, inline scope management, and visual polish matching the Stage and Repo pages
 - Automations editing — cron and webhook rules now have structured editors with live schedule previews and match-builder chips; the Form/Raw toggle keeps the underlying file accessible for power users
+- Stage cards — per-session cost is now shown directly on every card (Needs Attention, Working, Inactive), so you can see spend per session at a glance without opening it
 
 ## [0.4.0] - 2026-04-24
 

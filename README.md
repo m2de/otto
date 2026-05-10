@@ -34,6 +34,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Sessions requiring human input are surfaced at the top automatically
 - Session pinning, forking, renaming, and history replay
 - Filter and search across all sessions
+- Agent orchestration — agents can spawn child sessions to delegate work and send messages between sessions to coordinate
 
 ### Real-Time Transcripts
 

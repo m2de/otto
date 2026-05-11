@@ -64,7 +64,6 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Auto-approval mode — safe tool requests are approved automatically with confidence scoring; risky or uncertain requests still surface for manual review
 - Follow-up message queueing while agents are working
 - Prompt suggestions, slash command autocomplete, and image attachments
-- Hooks management — view, create, edit, and delete hooks across user, project, and local settings with full lifecycle event coverage
 - Provider profiles — configure and switch between API providers, with environment isolation and auto-detection of existing credentials
 - Change model, permission mode, and reasoning effort mid-session
 
@@ -99,6 +98,14 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Webhook match builder with event/action chips, repo/sender/label filters, and payload matchers — plus a Form/Raw toggle for power users
 - Persistent event feed and Insights panel showing top event types, hourly volume, and one-click "Create automation" suggestions for high-volume events
 - Per-automation session configuration (model, permissions, worktree, sandbox, budget, and more)
+
+### Hooks
+
+- Dedicated **Hooks** tab with structured editors for command, prompt, agent, and HTTP hooks across user, project, and local settings
+- Test panel — run any hook against a synthesised payload, see exit code, stdout, and stderr without leaving the dashboard
+- Recent-fires strip per hook showing the last execution outcomes from live sessions, so you can spot misbehaving hooks at a glance
+- Enable or disable hooks without deleting them — Otto stashes disabled hooks safely so Claude never sees them
+- Inline rename with Otto-managed metadata, plus a Form/Raw toggle for power users
 
 ### Multi-Project Support
 

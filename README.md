@@ -112,6 +112,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Project picker with automatic git repository scanning
 - Quick-switch navigation between repositories
 - Multi-repo projects — a single project can contain multiple git repositories
+- Drag to reorder project tabs in the header — your preferred ordering is remembered across reloads
 
 ### Plugins & Marketplace
 

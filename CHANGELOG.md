@@ -32,6 +32,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Plugins — unified browse view across all configured marketplaces (no per-marketplace dropdown), dedicated detail pages with author, repository, licence, and keywords, inline scope management, and visual polish matching the Stage and Repo pages
 - Automations editing — cron and webhook rules now have structured editors with live schedule previews and match-builder chips; the Form/Raw toggle keeps the underlying file accessible for power users
 - Stage cards — per-session cost is now shown directly on every card (Needs Attention, Working, Inactive), so you can see spend per session at a glance without opening it
+- Project tabs — drag to reorder projects in the header; the order is remembered across reloads, and each project's dot colour stays stable when you rearrange them
 
 ## [0.4.0] - 2026-04-24
 

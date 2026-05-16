@@ -15,6 +15,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Automations safety — crons and webhooks are now off by default with global on/off toggles in the header, so nothing runs until you opt in (state resets on restart)
 - Hooks tab — top-level home for hook management, with structured editors, a test panel for dry-run and live execution against synthesised payloads, recent-fires strip showing real execution outcomes per hook, enable/disable without deletion, and inline rename
 - Agent orchestration — sessions can now spawn child sessions and send messages to one another, enabling one agent to delegate work, coordinate with peers, and wait for results before continuing
+- Clear context — wipe a session's transcript and start fresh from the sidebar, or tick "Clear context" when approving a plan to begin implementation with a clean context window
 
 ### Fixed
 

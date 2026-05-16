@@ -98,6 +98,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Webhook match builder with event/action chips, repo/sender/label filters, and payload matchers — plus a Form/Raw toggle for power users
 - Live event feed and Insights panel showing top event types, recent volume patterns, and one-click "Create automation" suggestions for frequent events
 - Per-automation session configuration (model, permissions, worktree, sandbox, budget, and more)
+- Global on/off toggles in the header for crons and webhooks — automations are off by default, so nothing fires until you explicitly enable it
 
 ### Hooks
 

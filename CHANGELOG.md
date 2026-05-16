@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Git dashboard — interactive branch spine with ahead/behind indicators and dedicated branch detail pages (changes, commits, status)
 - Auto-approval — sessions in "auto" permission mode intelligently approve safe tool requests, showing confidence and reasoning in the timeline; uncertain or risky requests still prompt for manual approval
 - Automations tab — top-level home for cron and webhook automations, with structured form editors, live event feed, and Insights showing top event types, recent volume patterns, and one-click suggestions for frequent events
+- Automations safety — crons and webhooks are now off by default with global on/off toggles in the header, so nothing runs until you opt in (state resets on restart)
 - Hooks tab — top-level home for hook management, with structured editors, a test panel for dry-run and live execution against synthesised payloads, recent-fires strip showing real execution outcomes per hook, enable/disable without deletion, and inline rename
 - Agent orchestration — sessions can now spawn child sessions and send messages to one another, enabling one agent to delegate work, coordinate with peers, and wait for results before continuing
 

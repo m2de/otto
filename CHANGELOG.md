@@ -22,6 +22,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Worktrees with uncommitted changes or unpushed commits are no longer deleted when a session stops — only clean worktrees are auto-cleaned
 - Cost tracking — the Stage header's "today" figure and per-repo totals are now sourced from the provider's reported cost rather than estimated from token counts, so Bedrock, Vertex, and Azure users see accurate numbers instead of a Sonnet-priced approximation
 - Auto-approval — running multiple sessions concurrently no longer causes one session's earlier decisions to influence another's; each session now has its own classifier history, dropped when the session stops
+- In-app browser — agent-triggered browser sessions now consistently open inline in the dashboard panel; previously a timing race could cause a separate browser window to appear instead
 
 ### Improved
 
@@ -35,6 +36,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Automations editing — cron and webhook rules now have structured editors with live schedule previews and match-builder chips; the Form/Raw toggle keeps the underlying file accessible for power users
 - Stage cards — per-session cost is now shown directly on every card (Needs Attention, Working, Inactive), so you can see spend per session at a glance without opening it
 - Project tabs — drag to reorder projects in the header; the order is remembered across reloads, and each project's dot colour stays stable when you rearrange them
+- In-app browser — multiple agents can now have browsers open simultaneously, each with its own page; background sessions keep their browser state alive so autonomous agents can continue browsing while you work elsewhere
 
 ## [0.4.0] - 2026-04-24
 

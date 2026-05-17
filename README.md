@@ -80,6 +80,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Resizable browser panel with device viewport presets (mobile, tablet, desktop), fullscreen expand, and toolbar controls
 - Annotation overlay lets you highlight elements on the page, add comments, and send structured feedback back to the agent
 - Element screenshots and selectors are included in the feedback so the agent knows exactly what you're referring to
+- Agents can browse autonomously — when an agent drives the browser itself, the panel minimises to an "Agent browsing" indicator you can expand to watch the page live, then collapse again when you're done
 
 ### Git & GitHub
 

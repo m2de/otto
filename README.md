@@ -110,6 +110,13 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Enable or disable hooks without deleting them — Otto stashes disabled hooks safely so Claude never sees them
 - Inline rename with Otto-managed metadata, plus a Form/Raw toggle for power users
 
+### Memory
+
+- Dedicated **Memory** tab unifying both Claude memory systems — Instructions (CLAUDE.md hierarchy) and Learned (auto-memory) — in one place
+- View, edit, create, and delete entries at every level you own, across user and project scopes
+- Header stat line shows entry counts and approximate token usage at a glance
+- Memory behaviour settings tucked into a collapsible section so the main view stays focused on content
+
 ### Multi-Project Support
 
 - Project picker with automatic git repository scanning

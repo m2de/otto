@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- Memory tab — top-level home for Claude memory, unifying Instructions (CLAUDE.md hierarchy across user and project levels) and Learned (auto-memory) entries; view, edit, create, and delete at any level you own, with behaviour settings tucked into a collapsible section
 - Stage — tiered session overview (Needs Attention, Working, Idle, Inactive) replacing the fleet inbox for clearer prioritisation at a glance
 - Git dashboard — interactive branch spine with ahead/behind indicators and dedicated branch detail pages (changes, commits, status)
 - Auto-approval — sessions in "auto" permission mode intelligently approve safe tool requests, showing confidence and reasoning in the timeline; uncertain or risky requests still prompt for manual approval

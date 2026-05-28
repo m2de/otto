@@ -25,6 +25,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Cost tracking — the Stage header's "today" figure and per-repo totals are now sourced from the provider's reported cost rather than estimated from token counts, so Bedrock, Vertex, and Azure users see accurate numbers instead of a Sonnet-priced approximation
 - Auto-approval — running multiple sessions concurrently no longer causes one session's earlier decisions to influence another's; each session now has its own classifier history, dropped when the session stops
 - In-app browser — agent-triggered browser sessions now consistently open inline in the dashboard panel; previously a timing race could cause a separate browser window to appear instead
+- Slash commands and skills are now available after resuming an idle session — previously the plugin list was not refreshed on resume, so skills disappeared until the session was restarted
 
 ### Improved
 

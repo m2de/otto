@@ -92,6 +92,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - One-click "Launch Agent" from any GitHub item — automatically creates a worktree
 - Full worktree lifecycle management with batch operations and safety checks
 - Self-assignment on issues, label filtering, fuzzy search
+- Conflicted PRs are flagged in the list, with a one-click **Resolve conflicts** action that spins up a worktree agent to merge the base branch in safely (no force-pushes)
 
 ### Automation
 

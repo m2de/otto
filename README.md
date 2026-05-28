@@ -33,6 +33,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Stage overview with tiered session grouping: Needs Attention, Working, Idle, and Inactive
 - Sessions requiring human input are surfaced at the top automatically
 - Session pinning, forking, renaming, and history replay
+- One-click auto-naming — generate a descriptive session title from the conversation at any time
 - Filter and search across all sessions
 - Agent orchestration — agents can spawn child sessions to delegate work and send messages between sessions to coordinate
 

@@ -44,6 +44,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Project tabs — drag to reorder projects in the header; the order is remembered across reloads, and each project's dot colour stays stable when you rearrange them
 - In-app browser — multiple agents can now have browsers open simultaneously, each with its own page; background sessions keep their browser state alive so autonomous agents can continue browsing while you work elsewhere
 - In-app browser — agents can now drive the browser autonomously to navigate pages, run scripts, and capture screenshots; the panel minimises to a discreet "Agent browsing" indicator you can expand any time to watch the agent live
+- Status bar — model and effort are now clickable pills in the status bar (matching the permission-mode picker), replacing the right-sidebar Configuration card; the model badge always shows a short name (e.g. Opus 4.7), so Bedrock ARNs and `default` placeholders never appear in the UI
 
 ## [0.4.0] - 2026-04-24
 

@@ -88,6 +88,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Interactive branch visualisation with ahead/behind indicators relative to the default branch
 - Dedicated branch detail pages with Changes (diff viewer), Commits (log), and Status (PR, CI, linked sessions) tabs
 - Launch agents directly from any branch detail page — automatically creates a worktree
+- Delete branches directly from the branch detail page — confirmation modal warns about unpushed commits and optionally deletes the upstream remote branch in the same step
 - Worktree overview showing linked agent sessions per worktree
 - GitHub panel with Issues, Pull Requests, Discussions, CI Runs, and Tags
 - One-click "Launch Agent" from any GitHub item — automatically creates a worktree

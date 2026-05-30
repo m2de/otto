@@ -29,6 +29,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Auto-approval — running multiple sessions concurrently no longer causes one session's earlier decisions to influence another's; each session now has its own classifier history, dropped when the session stops
 - In-app browser — agent-triggered browser sessions now consistently open inline in the dashboard panel; previously a timing race could cause a separate browser window to appear instead
 - Slash commands and skills are now available after resuming an idle session — previously the plugin list was not refreshed on resume, so skills disappeared until the session was restarted
+- Model switching — the status-bar picker no longer shows a duplicate "Custom model" row alongside the resolved tier; switching model mid-session no longer leaves the session stuck on "Working"; and a failed model change now surfaces an inline error chip instead of silently doing nothing
 
 ### Improved
 
@@ -44,9 +45,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Project tabs — drag to reorder projects in the header; the order is remembered across reloads, and each project's dot colour stays stable when you rearrange them
 - In-app browser — multiple agents can now have browsers open simultaneously, each with its own page; background sessions keep their browser state alive so autonomous agents can continue browsing while you work elsewhere
 - In-app browser — agents can now drive the browser autonomously to navigate pages, run scripts, and capture screenshots; the panel minimises to a discreet "Agent browsing" indicator you can expand any time to watch the agent live
-- Status bar — model and effort are now clickable pills in the status bar (matching the permission-mode picker), replacing the right-sidebar Configuration card; the model badge always shows a short name (e.g. Opus 4.7), so Bedrock ARNs and `default` placeholders never appear in the UI
+- Status bar — model and effort are now clickable pills in the status bar (matching the permission-mode picker), replacing the right-sidebar Configuration card; the model badge always shows a short name (e.g. Opus 4.7), so Bedrock ARNs and `default` placeholders never appear in the UI. The model badge now also shows a small provider chip (Anthropic, AWS Bedrock, Google Vertex, or Azure Foundry) so it's clear which backend the session is actually running against
 - Context and cost details — clicking the Context or Cost rows in the session sidebar now opens dedicated detail modals (segmented context ring with expandable categories, token-mix donut with per-model breakdown), replacing the smaller bottom panels for a clearer, more scannable view
-- New session modal — permission mode and model now default from your repo's resolved Claude settings, with the model picker restricted to the managed allowlist and the Bypass option disabled when policy forbids it
+- New session modal — model picker is now a clean **Haiku / Sonnet / Opus** toggle that works for every provider (including Bedrock profiles where models are configured per environment). Permission mode still defaults from your repo's resolved Claude settings, managed-settings allowlists still gate which families you can pick, and the Bypass option is disabled when policy forbids it
 
 ## [0.4.0] - 2026-04-24
 

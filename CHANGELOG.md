@@ -49,6 +49,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Status bar — model and effort are now clickable pills in the status bar (matching the permission-mode picker), replacing the right-sidebar Configuration card; the model badge always shows a short name (e.g. Opus 4.7), so Bedrock ARNs and `default` placeholders never appear in the UI. The model badge now also shows a small provider chip (Anthropic, AWS Bedrock, Google Vertex, or Azure Foundry) so it's clear which backend the session is actually running against
 - Context and cost details — clicking the Context or Cost rows in the session sidebar now opens dedicated detail modals (segmented context ring with expandable categories, token-mix donut with per-model breakdown), replacing the smaller bottom panels for a clearer, more scannable view
 - New session modal — model picker is now a clean **Haiku / Sonnet / Opus** toggle that works for every provider (including Bedrock profiles where models are configured per environment). Permission mode still defaults from your repo's resolved Claude settings, managed-settings allowlists still gate which families you can pick, and the Bypass option is disabled when policy forbids it
+- Quick Chat (btw) — opens instantly with no warm-up, and is now explicitly scoped to general questions; for anything that needs to read your code, Otto directs you to a regular session
 
 ## [0.4.0] - 2026-04-24
 

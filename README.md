@@ -54,8 +54,8 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 
 ### Quick Chat
 
-- Floating "btw" panel for quick, read-only questions about your codebase — no need to create a full session
-- Pre-warmed for near-instant responses
+- Floating "btw" panel for quick questions — no need to create a full session
+- Tool-free by design: ask anything, and Otto points you at a regular session when the question needs codebase access
 - Open with `Cmd+.` / `Ctrl+.`, supports multi-turn conversations
 
 ### Agent Control

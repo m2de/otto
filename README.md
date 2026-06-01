@@ -66,7 +66,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Follow-up message queueing while agents are working
 - Prompt suggestions, slash command autocomplete, and image attachments
 - Provider profiles — configure and switch between API providers, with environment isolation and auto-detection of existing credentials
-- Change model, permission mode, and reasoning effort mid-session
+- Change model, permission mode, reasoning effort, and thinking on/off mid-session
 - Clear context mid-session, or clear-and-approve a plan to start implementation with a fresh context window
 
 ### Visual Previews

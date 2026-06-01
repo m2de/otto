@@ -19,6 +19,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Hooks tab — top-level home for hook management, with structured editors, a test panel for dry-run and live execution against synthesised payloads, recent-fires strip showing real execution outcomes per hook, enable/disable without deletion, and inline rename
 - Agent orchestration — sessions can now spawn child sessions and send messages to one another, enabling one agent to delegate work, coordinate with peers, and wait for results before continuing
 - Clear context — wipe a session's transcript and start fresh from the sidebar, or tick "Clear context" when approving a plan to begin implementation with a clean context window
+- Background sub-agents — a **Background** button on each running sub-agent row (and in the sub-agent detail modal) lets a long-running sub-task continue on its own so the parent turn doesn't have to wait
 
 ### Fixed
 
@@ -32,6 +33,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Model switching — the status-bar picker no longer shows a duplicate "Custom model" row alongside the resolved tier; switching model mid-session no longer leaves the session stuck on "Working"; and a failed model change now surfaces an inline error chip instead of silently doing nothing
 - Effort picker — the in-session status-bar picker no longer hides "Extra High" mid-session; all five effort levels (Low, Medium, High, Extra High, Max) are now consistently available in both the new-session modal and the in-session picker
 - GitHub tab no longer stalls on "Loading…" on first load or after a reconnect — counts now populate as soon as GitHub responds, and reconnecting repopulates the tab from cache instantly
+- Stale "running" sub-agent rows are now cleaned up automatically — Otto reconciles against the agent runtime's view of active sub-agents on reconnect and at turn end, so ghost rows from dropped messages or replay gaps disappear on their own
 
 ### Improved
 

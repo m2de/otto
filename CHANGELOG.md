@@ -13,7 +13,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Git dashboard — interactive branch spine with ahead/behind indicators and dedicated branch detail pages (changes, commits, status)
 - Branch deletion — delete local branches from the branch detail page, with an optional "also delete remote" step when an upstream exists and an explicit acknowledgement when the branch has unmerged commits
 - PR merge conflicts surfaced — conflicted pull requests in the GitHub panel are flagged with a red merge icon, and a one-click **Resolve conflicts** action launches a worktree agent that merges the base branch in, runs your checks, and pushes the fix without ever force-pushing
-- Auto-approval — sessions in "auto" permission mode intelligently approve safe tool requests, showing confidence and reasoning in the timeline; uncertain or risky requests still prompt for manual approval
+- Auto-approval — sessions in "auto" permission mode automatically approve safe tool requests; uncertain or risky requests still prompt for manual approval
 - Automations tab — top-level home for cron and webhook automations, with structured form editors, live event feed, and Insights showing top event types, recent volume patterns, and one-click suggestions for frequent events
 - Automations safety — crons and webhooks are now off by default with per-repo on/off toggles in the header, so each repo opts in independently and nothing runs until you do (state resets on restart)
 - Hooks tab — top-level home for hook management, with structured editors, a test panel for dry-run and live execution against synthesised payloads, recent-fires strip showing real execution outcomes per hook, enable/disable without deletion, and inline rename
@@ -27,7 +27,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Worktrees with uncommitted changes or unpushed commits are no longer deleted when a session stops — only clean worktrees are auto-cleaned
 - Cost tracking — the Stage header's "today" figure and per-repo totals are now sourced from the provider's reported cost rather than estimated from token counts, so Bedrock, Vertex, and Azure users see accurate numbers instead of a Sonnet-priced approximation
 - Inactive sessions no longer lose their cost badge when you open them — previously the recorded cost was visible in the list but vanished as soon as the session was opened
-- Auto-approval — running multiple sessions concurrently no longer causes one session's earlier decisions to influence another's; each session now has its own classifier history, dropped when the session stops
 - In-app browser — agent-triggered browser sessions now consistently open inline in the dashboard panel; previously a timing race could cause a separate browser window to appear instead
 - Slash commands and skills are now available after resuming an idle session — previously the plugin list was not refreshed on resume, so skills disappeared until the session was restarted
 - Model switching — the status-bar picker no longer shows a duplicate "Custom model" row alongside the resolved tier; switching model mid-session no longer leaves the session stuck on "Working"; and a failed model change now surfaces an inline error chip instead of silently doing nothing

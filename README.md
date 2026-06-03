@@ -33,7 +33,6 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Stage overview with tiered session grouping: Needs Attention, Working, Idle, and Inactive
 - Sessions requiring human input are surfaced at the top automatically
 - Session pinning, forking, renaming, and history replay
-- One-click auto-naming — generate a descriptive session title from the conversation at any time
 - Filter and search across all sessions
 - Agent orchestration — agents can spawn child sessions to delegate work and send messages between sessions to coordinate
 
@@ -51,12 +50,6 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - **Mission Timeline** — mission control layout with parallel activity tracks, draggable minimap, and click-to-inspect detail panel
 - **Cockpit HUD** — flight instrument aesthetic with context gauge, tool radar, cost readouts, and transcript message cycling
 - View picker toggle with persistent selection across sessions
-
-### Quick Chat
-
-- Floating "btw" panel for quick questions — no need to create a full session
-- Tool-free by design: ask anything, and Otto points you at a regular session when the question needs codebase access
-- Open with `Cmd+.` / `Ctrl+.`, supports multi-turn conversations
 
 ### Agent Control
 

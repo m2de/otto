@@ -32,6 +32,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Model switching — the status-bar picker no longer shows a duplicate "Custom model" row alongside the resolved tier; switching model mid-session no longer leaves the session stuck on "Working"; and a failed model change now surfaces an inline error chip instead of silently doing nothing
 - Effort picker — the in-session status-bar picker no longer hides "Extra High" mid-session; all five effort levels (Low, Medium, High, Extra High, Max) are now consistently available in both the new-session modal and the in-session picker
 - GitHub tab no longer stalls on "Loading…" on first load or after a reconnect — counts now populate as soon as GitHub responds, and reconnecting repopulates the tab from cache instantly
+- GitHub panel — the packaged desktop app no longer reports `Executable not found in $PATH: "gh"` when GitHub CLI is installed via Homebrew or another non-default location; bundled tool lookups now find Homebrew, MacPorts, and `~/.local/bin` installations automatically
 - Stale "running" sub-agent rows are now cleaned up automatically — Otto reconciles against the agent runtime's view of active sub-agents on reconnect and at turn end, so ghost rows from dropped messages or replay gaps disappear on their own
 
 ### Improved

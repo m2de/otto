@@ -10,8 +10,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - Memory tab — top-level home for Claude memory, unifying Instructions (CLAUDE.md hierarchy across user and project levels) and Learned (auto-memory) entries; view, edit, create, and delete at any level you own, with behaviour settings tucked into a collapsible section
 - Stage — tiered session overview (Needs Attention, Working, Idle, Inactive) replacing the fleet inbox for clearer prioritisation at a glance
-- Git dashboard — interactive branch spine with ahead/behind indicators and dedicated branch detail pages (changes, commits, status)
-- Branch deletion — delete local branches from the branch detail page, with an optional "also delete remote" step when an upstream exists and an explicit acknowledgement when the branch has unmerged commits
 - PR merge conflicts surfaced — conflicted pull requests in the GitHub panel are flagged with a red merge icon, and a one-click **Resolve conflicts** action launches a worktree agent that merges the base branch in, runs your checks, and pushes the fix without ever force-pushing
 - Auto-approval — sessions in "auto" permission mode automatically approve safe tool requests; uncertain or risky requests still prompt for manual approval
 - Automations tab — top-level home for cron and webhook automations, with structured form editors, live event feed, and Insights showing top event types, recent volume patterns, and one-click suggestions for frequent events
@@ -39,12 +37,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Improved
 
 - Session auto-naming — unnamed sessions are automatically titled from the plan heading when a plan is approved
-- Navigation — streamlined icon rail layout with direct routing to Stage, Repo, Worktrees, GitHub, Plugins, and Config
+- Navigation — streamlined icon rail layout with direct routing to Stage, Worktrees, GitHub, Plugins, and Config
 - Sub-agent modal — live metadata updates, conversation auto-scroll with sticky scroll-to-bottom, and full response display without truncation
 - Auto-updater — pre-release channel support with tray toggle; RC versions automatically receive pre-release updates
 - Worktrees — gitignored files listed in `.worktreeinclude` (e.g. `.env`) are now automatically copied into Otto-created worktrees
 - Permissions settings — unified rule-centric view across user, project, and local scopes, with conflict detection (duplicates, allow/deny clashes, wildcard shadowing), a guided Add Rule wizard, scope-chip move/duplicate, and bulk select with drag-and-drop
-- Plugins — unified browse view across all configured marketplaces (no per-marketplace dropdown), dedicated detail pages with author, repository, licence, and keywords, inline scope management, and visual polish matching the Stage and Repo pages
+- Plugins — unified browse view across all configured marketplaces (no per-marketplace dropdown), dedicated detail pages with author, repository, licence, and keywords, inline scope management, and visual polish matching the Stage page
 - Automations editing — cron and webhook rules now have structured editors with live schedule previews and match-builder chips; the Form/Raw toggle keeps the underlying file accessible for power users
 - Stage cards — per-session cost is now shown directly on every card (Needs Attention, Working, Inactive), so you can see spend per session at a glance without opening it
 - Project tabs — drag to reorder projects in the header; the order is remembered across reloads, and each project's dot colour stays stable when you rearrange them

@@ -60,7 +60,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Prompt suggestions, slash command autocomplete, and image attachments
 - Provider profiles — configure and switch between API providers, with environment isolation and auto-detection of existing credentials
 - Change model, permission mode, reasoning effort, and thinking on/off mid-session
-- When approving a plan, pick the implementation permission mode and (optionally) a different model — so you can plan with Opus and build with Sonnet on a fresh context window. Clear context is also available mid-session from the sidebar.
+- When approving a plan, pick the implementation permission mode, reasoning effort, and (optionally) a different model — so you can plan with Opus and build with Sonnet on a fresh context window. Clear context is also available mid-session from the sidebar.
 
 ### Visual Previews
 

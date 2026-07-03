@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- Live token visibility — sessions now show token usage alongside cost everywhere it matters: a dual cost/tokens gauge with a LIVE indicator in the Cockpit HUD, a combined cost·tokens row on the session panel and list cards, and a total-tokens headline with cache hit rate and exact counts in the cost detail view. The token count ticks up as the agent works
 - Memory tab — top-level home for Claude memory, unifying Instructions (CLAUDE.md hierarchy across user and project levels) and Learned (auto-memory) entries; view, edit, create, and delete at any level you own, with behaviour settings tucked into a collapsible section
 - Stage — tiered session overview (Needs Attention, Working, Idle, Inactive) replacing the fleet inbox for clearer prioritisation at a glance
 - PR merge conflicts surfaced — conflicted pull requests in the GitHub panel are flagged with a red merge icon, and a one-click **Resolve conflicts** action launches a worktree agent that merges the base branch in, runs your checks, and pushes the fix without ever force-pushing
@@ -26,6 +27,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Cost tracking — the Stage header's "today" figure and per-repo totals are now sourced from the provider's reported cost rather than estimated from token counts, so Bedrock, Vertex, and Azure users see accurate numbers instead of a Sonnet-priced approximation
 - Provider auth — forking a session or resuming a session after restart no longer drops the active provider profile, so Bedrock, Vertex, and Azure users stay signed in instead of being prompted to log in again
 - Inactive sessions no longer lose their cost badge when you open them — previously the recorded cost was visible in the list but vanished as soon as the session was opened
+- Session cost no longer disappears — spend now survives reconnecting, reloading the page, restarting the app, and clearing a session's context, so the figure you see always reflects what you've actually spent
 - In-app browser — agent-triggered browser sessions now consistently open inline in the dashboard panel; previously a timing race could cause a separate browser window to appear instead
 - Slash commands and skills are now available after resuming an idle session — previously the plugin list was not refreshed on resume, so skills disappeared until the session was restarted
 - Model switching — the status-bar picker no longer shows a duplicate "Custom model" row alongside the resolved tier; switching model mid-session no longer leaves the session stuck on "Working"; and a failed model change now surfaces an inline error chip instead of silently doing nothing

@@ -48,7 +48,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Three alternative session visualisations beyond the standard dashboard: Neural Pulse, Mission Timeline, and Cockpit HUD
 - **Neural Pulse** — living organism canvas showing causal relationships between prompts, thinking, and tool calls as an interactive force-directed graph, zoomable and pannable, with sub-agents as integrated branches
 - **Mission Timeline** — mission control layout with parallel activity tracks, draggable minimap, and click-to-inspect detail panel
-- **Cockpit HUD** — flight instrument aesthetic with context gauge, tool radar, cost readouts, and transcript message cycling
+- **Cockpit HUD** — flight instrument aesthetic with context gauge, tool radar, live cost and token gauges, and transcript message cycling
 - View picker toggle with persistent selection across sessions
 
 ### Agent Control
@@ -129,6 +129,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - In-app feedback tool — annotate UI elements and submit bug reports directly from the dashboard
 - Automatic updates with in-app download and restart
 - Detailed context usage breakdown with token counts by category
+- Live cost and token tracking across sessions, with a cost detail view showing total tokens, cache hit rate, and exact counts — spend survives reconnects, reloads, and restarts
 - SDK recording and debugging tools
 - Mobile-responsive layout
 

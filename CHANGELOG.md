@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [0.6.0] - 2026-07-08
+
 ### Added
 
 - Live token visibility — sessions now show token usage alongside cost everywhere it matters: a dual cost/tokens gauge with a LIVE indicator in the Cockpit HUD, a combined cost·tokens row on the session panel and list cards, and a total-tokens headline with cache hit rate and exact counts in the cost detail view. The token count ticks up as the agent works

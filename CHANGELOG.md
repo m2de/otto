@@ -18,7 +18,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Hooks tab — top-level home for hook management, with structured editors, a test panel for dry-run and live execution against synthesised payloads, recent-fires strip showing real execution outcomes per hook, enable/disable without deletion, and inline rename
 - Agent orchestration — sessions can now spawn child sessions and send messages to one another, enabling one agent to delegate work, coordinate with peers, and wait for results before continuing
 - Plan approval redesign — approve a plan with a single action that bundles the implementation permission mode (Ask / Accept edits / Auto / Bypass), a reasoning effort selector (defaulting to the level carried over from planning), an optional model switch, and a Fresh context toggle, so you can plan with one model and build with another (e.g. plan with Opus, implement with Sonnet on a clean context). The standalone "Clear context" sidebar action remains available for wiping a session mid-flight.
-- Background sub-agents — a **Background** button on each running sub-agent row (and in the sub-agent detail modal) lets a long-running sub-task continue on its own so the parent turn doesn't have to wait
+- Background sub-agents — a **Background** button on each running sub-agent row (and in the sub-agent detail modal) lets a long-running sub-task continue on its own so the parent turn doesn't have to wait; the Sub-agents section header now shows a live count of how many tasks are running in the background
 
 ### Fixed
 

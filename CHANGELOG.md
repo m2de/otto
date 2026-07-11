@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Improved
+
+- Neural Pulse — reworked into a token-sized orbit constellation: each prompt anchors a hub with its thinking and tool calls orbiting it, orb size now scales with token usage (sub-agent orbs grow live as they work), and the layout stays stable as the session grows, with lit-sphere orbs, spawn animations, and a nebula backdrop
+
 ## [0.6.0] - 2026-07-08
 
 ### Added

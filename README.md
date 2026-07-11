@@ -46,7 +46,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 ### Session Views
 
 - Three alternative session visualisations beyond the standard dashboard: Neural Pulse, Mission Timeline, and Cockpit HUD
-- **Neural Pulse** — living organism canvas showing causal relationships between prompts, thinking, and tool calls as an interactive force-directed graph, zoomable and pannable, with sub-agents as integrated branches
+- **Neural Pulse** — a living constellation of the session: each prompt anchors a hub, with its thinking and tool calls orbiting it, and orb size scales with token usage (sub-agent orbs grow live as they work). Interactive, zoomable and pannable, with sub-agents as integrated branches
 - **Mission Timeline** — mission control layout with parallel activity tracks, draggable minimap, and click-to-inspect detail panel
 - **Cockpit HUD** — flight instrument aesthetic with context gauge, tool radar, live cost and token gauges, and transcript message cycling
 - View picker toggle with persistent selection across sessions

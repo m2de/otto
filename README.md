@@ -55,7 +55,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 
 - Granular session configuration: permission modes, thinking budgets, cost limits, turn limits, sandbox mode, tool restrictions, structured output, and more
 - Interactive permission and plan approval with visual previews
-- Auto-approval mode — safe tool requests are approved automatically; risky or uncertain requests still surface for manual review
+- Auto-approval mode — safe tool requests are approved automatically; risky or uncertain requests still surface for manual review, and any request the automatic check blocks is recorded in the transcript so you can see what was denied and why
 - Follow-up message queueing while agents are working
 - Prompt suggestions, slash command autocomplete, and image attachments
 - Provider profiles — configure and switch between API providers, with environment isolation and auto-detection of existing credentials

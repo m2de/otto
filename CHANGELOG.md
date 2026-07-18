@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Improved
 
 - Neural Pulse — reworked into a token-sized orbit constellation: each prompt anchors a hub with its thinking and tool calls orbiting it, orb size now scales with token usage (sub-agent orbs grow live as they work), and the layout stays stable as the session grows, with lit-sphere orbs, spawn animations, and a nebula backdrop
+- Transcript clarity — responses cut short by an interrupt now carry an **(interrupted)** marker so you know they may be incomplete; turns fired by a scheduled task are tagged **(scheduled)** at session end; Bash commands that hit their timeout and were moved to the background show an "auto-backgrounded" note; and a sub-agent waiting out a rate limit now shows a "retrying" line instead of looking hung
 
 ## [0.6.0] - 2026-07-08
 

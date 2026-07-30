@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- Fable model tier — Fable is now selectable alongside Opus, Sonnet, and Haiku: configure it per provider in the Model Configuration card and pick it in the new-session model selector
 - Default session view (the Handover) — a new session view, now the default, built around the moment you return to a session: top to bottom it shows why you're here, what happened, and what's being asked. A state banner surfaces the session's phase at a glance (needs your decision, working, turn finished, or failed); permission and question prompts render inline as the page's primary element instead of popping up as separate dialogs; the agent's latest message sits front and centre with controls to cycle back through earlier updates; and a receipts row shows outcome-shaped evidence — files changed with diffstats you can click through to, command pass/fail counts, and task progress. Dashboard, Neural Pulse, Timeline, and Cockpit remain available from the view picker
 
 ### Improved

@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - Fable model tier — Fable is now selectable alongside Opus, Sonnet, and Haiku: configure it per provider in the Model Configuration card and pick it in the new-session model selector
+- Branch changes panel — the "Files changed" tile now shows a live diffstat of your branch against main (instead of just the agent's own edits), and clicking it opens a slide-over with branch and push state, your linked pull request (review and CI status), the branch's own commits, and every changed file grouped as Staged / Unstaged / Untracked, each opening its diff. Available from every session view
 - Default session view (the Handover) — a new session view, now the default, built around the moment you return to a session: top to bottom it shows why you're here, what happened, and what's being asked. A state banner surfaces the session's phase at a glance (needs your decision, working, turn finished, or failed); permission and question prompts render inline as the page's primary element instead of popping up as separate dialogs; the agent's latest message sits front and centre with controls to cycle back through earlier updates; and a receipts row shows outcome-shaped evidence — files changed with diffstats you can click through to, command pass/fail counts, and task progress. Dashboard, Neural Pulse, Timeline, and Cockpit remain available from the view picker
 
 ### Improved
@@ -21,6 +22,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Fixed
 
 - Tool summaries in the Working banner and status bar no longer cut off mid-string while the box still has room — long commands and file paths now fill the available space and clip cleanly at the true edge instead of ending early with an ellipsis
+- New files created by an agent now show their diff correctly in the branch changes panel — previously they showed "No diff data available"
 
 ## [0.6.0] - 2026-07-08
 

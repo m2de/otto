@@ -18,6 +18,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Auto-mode transparency — when a session in auto permission mode automatically denies a tool request, the transcript now records an **Auto-denied** entry with the reason, so blocked actions are visible instead of failing silently
 - Automations effort control — cron and webhook automations can now set a reasoning effort level (Low, Medium, High, Extra High, Max) from the Configuration panel, matching the in-session effort picker; unset leaves it at the default
 
+### Fixed
+
+- Tool summaries in the Working banner and status bar no longer cut off mid-string while the box still has room — long commands and file paths now fill the available space and clip cleanly at the true edge instead of ending early with an ellipsis
+
 ## [0.6.0] - 2026-07-08
 
 ### Added

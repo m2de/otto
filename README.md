@@ -85,7 +85,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Full worktree lifecycle management with batch operations and safety checks
 - Self-assignment on issues, label filtering, fuzzy search
 - Conflicted PRs are flagged in the list, with a one-click **Resolve conflicts** action that spins up a worktree agent to merge the base branch in safely (no force-pushes)
-- Branch changes panel — a live diffstat of your branch against main, with a slide-over showing branch and push state, your linked pull request (review and CI status), the branch's own commits, and every changed file grouped as Staged / Unstaged / Untracked — click any file for its diff. Available from every session view: as a tile in Default and Dashboard, or via the sidebar's file-count stat elsewhere
+- Branch changes panel — a live diffstat of your branch against main, with a slide-over showing branch and push state, your linked pull request (review and CI status), the branch's own commits, and every changed file grouped as Staged / Unstaged / Untracked — click any file for its diff. Commits expand in place to show the files they touched, each opening its diff at that commit. Available from every session view: as a tile in Default and Dashboard, or via the sidebar's file-count stat elsewhere
 
 ### Automation
 

@@ -20,6 +20,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Transcript clarity — responses cut short by an interrupt now carry an **(interrupted)** marker so you know they may be incomplete; turns fired by a scheduled task are tagged **(scheduled)** at session end; Bash commands that hit their timeout and were moved to the background show an "auto-backgrounded" note; and a sub-agent waiting out a rate limit now shows a "retrying" line instead of looking hung
 - Auto-mode transparency — when a session in auto permission mode automatically denies a tool request, the transcript now records an **Auto-denied** entry with the reason, so blocked actions are visible instead of failing silently
 - Automations effort control — cron and webhook automations can now set a reasoning effort level (Low, Medium, High, Extra High, Max) from the Configuration panel, matching the in-session effort picker; unset leaves it at the default
+- Default session view — the layout is now a fixed frame that fills the window instead of a scrolling page: reports no longer sit inside a scrollbar within a scrollbar, and the view makes better use of wide screens
 
 ### Fixed
 

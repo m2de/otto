@@ -76,6 +76,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Annotation overlay lets you highlight elements on the page, add comments, and send structured feedback back to the agent
 - Element screenshots and selectors are included in the feedback so the agent knows exactly what you're referring to
 - Agents can browse autonomously — when an agent drives the browser itself, the panel minimises to an "Agent browsing" indicator you can expand to watch the page live, then collapse again when you're done
+- The Default view's receipts row shows a browser card whenever an agent has a page open — page title, status, and a live preview of its last capture, with arrows to look back through recent screenshots
 
 ### Git & GitHub
 

@@ -26,6 +26,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- Default view no longer shows "Over to you" while an agent is still working — this could happen when a session was started by an automation or cron (it looked idle from the moment it started) or when the main turn finished but a sub-agent was still running (now shown as "N sub-agent(s) working" instead)
 - Context gauge is back — the sidebar row, Cockpit HUD, and other in-session indicators show live context usage again, ticking up as you work, and no longer flicker between different values while sub-agents are running. Context and cost now survive a page reload without dropping, and the context detail modal's headline figures match what the sidebar shows instead of disagreeing with it. On Bedrock the old approach risked triggering extra billed background calls; the gauge is now driven by usage figures Otto already receives, so showing it costs nothing extra
 - Tool summaries in the Working banner and status bar no longer cut off mid-string while the box still has room — long commands and file paths now fill the available space and clip cleanly at the true edge instead of ending early with an ellipsis
 - New files created by an agent now show their diff correctly in the branch changes panel — previously they showed "No diff data available"

@@ -27,6 +27,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - Tool summaries in the Working banner and status bar no longer cut off mid-string while the box still has room — long commands and file paths now fill the available space and clip cleanly at the true edge instead of ending early with an ellipsis
 - New files created by an agent now show their diff correctly in the branch changes panel — previously they showed "No diff data available"
+- Panels no longer get stuck on "Loading…" when opened right as Otto connects or reconnects — Hooks, Memory, Plugins, and a session's history now recover on their own instead of requiring a page reload
 
 ## [0.6.0] - 2026-07-08
 

@@ -31,6 +31,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 
 - Launch and monitor multiple agent sessions simultaneously from a single dashboard
 - Stage overview with tiered session grouping: Needs Attention, Working, Idle, and Inactive
+- Stage cards show a thumbnail of the agent's most recent browser capture, so you can spot who's driving a page without opening each session
 - Sessions requiring human input are surfaced at the top automatically
 - Session pinning, forking, renaming, and history replay
 - Filter and search across all sessions

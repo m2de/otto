@@ -25,6 +25,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Automations effort control — cron and webhook automations can now set a reasoning effort level (Low, Medium, High, Extra High, Max) from the Configuration panel, matching the in-session effort picker; unset leaves it at the default
 - Default session view — the layout is now a fixed frame that fills the window instead of a scrolling page: reports no longer sit inside a scrollbar within a scrollbar, and the view makes better use of wide screens
 - Agent orchestration — a session now keeps track of every related session it's connected to (who spawned it, and what it's spawned), so agents can find and message each other reliably across multi-step chains, and this survives the conversation being compacted
+- Default session view — running sub-agents now show as live strips (what they're doing, tool activity, tokens, elapsed time) that sit above the prompt, and finished sub-agents collapse to a compact roll call; click either to open the full sub-agent conversation
 
 ### Fixed
 

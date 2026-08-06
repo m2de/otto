@@ -68,6 +68,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 
 - When Claude presents options or asks questions, Otto renders fully interactive HTML previews directly in the dashboard
 - See UI mockups, architecture diagrams, and design options as actual rendered visuals — not markdown descriptions
+- Options and their preview sit side by side, so you can compare choices and the mockup at once without scrolling
 - Quickly verify your agent understands the task before it starts building
 
 ### In-App Browser

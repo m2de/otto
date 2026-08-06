@@ -28,6 +28,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Default session view — the layout is now a fixed frame that fills the window instead of a scrolling page: reports no longer sit inside a scrollbar within a scrollbar, and the view makes better use of wide screens
 - Agent orchestration — a session now keeps track of every related session it's connected to (who spawned it, and what it's spawned), so agents can find and message each other reliably across multi-step chains, and this survives the conversation being compacted
 - Default session view — running sub-agents now show as live strips (what they're doing, tool activity, tokens, elapsed time) that sit above the prompt, and finished sub-agents collapse to a compact roll call; click either to open the full sub-agent conversation
+- Composer and status bar — the prompt box and status row read as one calmer surface: pinned commands moved into the composer's own footer next to Send, Stop/Resume moved up onto the status row so it ends in an action rather than trailing off, and mode/model/effort controls now show as plain text that only gains colour and a surface on hover — so colour is reserved for things that need attention
 - Visual previews — options and their preview now sit side by side instead of stacked, so you can compare choices and the mockup without scrolling. Previews render at their natural height instead of being cropped, and light-background designs now show up with readable dark text instead of being forced into unreadable light text
 
 ### Fixed

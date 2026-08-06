@@ -24,6 +24,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Auto-mode transparency — when a session in auto permission mode automatically denies a tool request, the transcript now records an **Auto-denied** entry with the reason, so blocked actions are visible instead of failing silently
 - Automations effort control — cron and webhook automations can now set a reasoning effort level (Low, Medium, High, Extra High, Max) from the Configuration panel, matching the in-session effort picker; unset leaves it at the default
 - Default session view — the layout is now a fixed frame that fills the window instead of a scrolling page: reports no longer sit inside a scrollbar within a scrollbar, and the view makes better use of wide screens
+- Agent orchestration — a session now keeps track of every related session it's connected to (who spawned it, and what it's spawned), so agents can find and message each other reliably across multi-step chains, and this survives the conversation being compacted
 
 ### Fixed
 
@@ -32,6 +33,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Tool summaries in the Working banner and status bar no longer cut off mid-string while the box still has room — long commands and file paths now fill the available space and clip cleanly at the true edge instead of ending early with an ellipsis
 - New files created by an agent now show their diff correctly in the branch changes panel — previously they showed "No diff data available"
 - Panels no longer get stuck on "Loading…" when opened right as Otto connects or reconnects — Hooks, Memory, Plugins, and a session's history now recover on their own instead of requiring a page reload
+- Agent orchestration — messages one agent sends to another are now clearly marked as coming from that agent instead of looking like they came from you, and the sender's name displays correctly (some sessions previously showed up labelled as "titled"). Spawning a session no longer risks the caller getting stuck waiting for a reply that may never come
 
 ## [0.6.0] - 2026-07-08
 

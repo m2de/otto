@@ -19,6 +19,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Tasks panel — the Tasks tile in the receipts row now opens a slide-over like Files and Commands, showing each task's description, dependencies resolved to their subjects rather than raw ids, owner, and live status history, instead of expanding in place and pushing the rest of the row out of view
 - Session lineage — the Stage and Default view now show which session spawned which. Stage cards get a subtle marker naming the related session, and hovering it highlights the other side of the pairing wherever it sits; the Default view's Crew lane pins delegated sessions ahead of sub-agents, with the parent named above
 - Default session view — plan review now happens inline instead of opening a separate dialog: the plan sits alongside the approval controls, and highlighting any passage pins a note right beside it, so feedback stays attached to the line it's about instead of collecting in a separate list
+- Default session view — the same highlight-to-feedback now works on the agent's latest message: pin a note to a passage and it rides along with your next reply. Paging back through earlier updates keeps the right notes on the right update, and stepping back no longer snaps back to the newest one the moment the agent says something else
 
 ### Improved
 

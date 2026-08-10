@@ -113,6 +113,8 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - View, edit, create, and delete entries at every level you own, across user and project scopes
 - Header stat line shows entry counts and approximate token usage at a glance
 - Memory behaviour settings tucked into a collapsible section so the main view stays focused on content
+- **Dream now** button opens a pre-filled session that reviews and consolidates your learned memories on demand
+- Auto-dream toggle schedules nightly consolidation itself, so it works reliably on every supported provider — not just when signed in directly with Claude
 
 ### Multi-Project Support
 

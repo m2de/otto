@@ -45,6 +45,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Task tracking — task descriptions, blockers, and ownership now actually reach the dashboard; previously this data silently failed to arrive, so tasks only ever showed a bare title and status
 - Panels no longer get stuck on "Loading…" when opened right as Otto connects or reconnects — Hooks, Memory, Plugins, and a session's history now recover on their own instead of requiring a page reload
 - Agent orchestration — messages one agent sends to another are now clearly marked as coming from that agent instead of looking like they came from you, and the sender's name displays correctly (some sessions previously showed up labelled as "titled"). Spawning a session no longer risks the caller getting stuck waiting for a reply that may never come
+- Cron automations no longer spawn a burst of duplicate sessions for the same automation on a single fire, and disabled crons no longer keep firing in the background — a stale internal timer could survive being replaced or turned off
 
 ## [0.6.0] - 2026-07-08
 

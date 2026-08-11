@@ -116,6 +116,12 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - **Dream now** button opens a pre-filled session that reviews and consolidates your learned memories on demand
 - Auto-dream toggle schedules nightly consolidation itself, so it works reliably on every supported provider — not just when signed in directly with Claude
 
+### Themes
+
+- Five brand themes, each available in dark and light — switch from a picker in the header
+- Every theme re-tints the whole interface, not just the accent colour, while keeping the same contrast and legibility
+- Your choice persists across reloads, with no flash of the wrong theme on startup
+
 ### Multi-Project Support
 
 - Project picker with automatic git repository scanning

@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- **Container sessions** — a new isolation mode alongside worktrees: each session runs in its own environment with its own ports and dependencies, so multiple agents can run dev servers at the same time without clashing. macOS only, and requires a one-off `container system start`
 - Five brand themes, each in dark and light, switchable from a picker in the header — your choice persists across reloads
 - Attach files to a prompt — drag files onto the composer, paste them, or use the paperclip picker; any file type is supported, not just images. Files are referenced by their real location so Claude reads them in place with no copying, and can grep or re-read them if they change
 - Plugin contents — browse cards, marketplace rows, and detail pages now show what a plugin ships: icon-pill counts for skills, agents, commands, hooks, MCP servers, and LSP servers, with a full named breakdown and descriptions on the detail page. Works even for marketplace plugins you haven't installed yet

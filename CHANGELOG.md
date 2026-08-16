@@ -49,6 +49,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Agent orchestration — messages one agent sends to another are now clearly marked as coming from that agent instead of looking like they came from you, and the sender's name displays correctly (some sessions previously showed up labelled as "titled"). Spawning a session no longer risks the caller getting stuck waiting for a reply that may never come
 - Cron automations no longer spawn a burst of duplicate sessions for the same automation on a single fire, and disabled crons no longer keep firing in the background — a stale internal timer could survive being replaced or turned off
 - Themes now reach every corner of the interface — code blocks in the transcript used to stay dark regardless of theme, and status colours (success, error) were shared across themes instead of matching each one; both now re-tint properly, including in light mode
+- In-app browser — a screenshot of an element could come back blank or cropped from the wrong spot once the page had been scrolled or zoomed; captures are now positioned correctly regardless of scroll position or zoom level
 
 ## [0.6.0] - 2026-07-08
 

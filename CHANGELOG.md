@@ -52,6 +52,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - In-app browser — a screenshot of an element could come back blank or cropped from the wrong spot once the page had been scrolled or zoomed; captures are now positioned correctly regardless of scroll position or zoom level
 - Crons and webhooks now remember whether they were switched on for each repo and turn themselves back on after a restart, instead of silently going quiet until you noticed and re-enabled them
 - Clicking the Crons and Webhooks toggles in quick succession could undo one of the clicks, leaving the wrong automation switched on — fixed
+- Launching a session from a GitHub issue, pull request, discussion, or tag ignored the effort level chosen in the launch dialog and always ran at the default — fixed
 
 ## [0.6.0] - 2026-07-08
 

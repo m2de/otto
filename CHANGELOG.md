@@ -28,7 +28,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Improved
 
 - Neural Pulse — reworked into a token-sized orbit constellation: each prompt anchors a hub with its thinking and tool calls orbiting it, orb size now scales with token usage (sub-agent orbs grow live as they work), and the layout stays stable as the session grows, with lit-sphere orbs, spawn animations, and a nebula backdrop
-- Transcript clarity — responses cut short by an interrupt now carry an **(interrupted)** marker so you know they may be incomplete; turns fired by a scheduled task are tagged **(scheduled)** at session end; Bash commands that hit their timeout and were moved to the background show an "auto-backgrounded" note; and a sub-agent waiting out a rate limit now shows a "retrying" line instead of looking hung
+- Transcript clarity — responses cut short by an interrupt now carry an **(interrupted)** marker so you know they may be incomplete; turns fired by a scheduled task are tagged **(scheduled)** and turns triggered by another of your sessions sending a message are tagged **(from peer)**, both at session end; Bash commands that hit their timeout and were moved to the background show an "auto-backgrounded" note; and a sub-agent waiting out a rate limit now shows a "retrying" line instead of looking hung
+- Slash command palette now marks commands that are bound to your local terminal, so you know before running one that it may behave differently inside a session
 - Auto-mode transparency — when a session in auto permission mode automatically denies a tool request, the transcript now records an **Auto-denied** entry with the reason, so blocked actions are visible instead of failing silently
 - Automations effort control — cron and webhook automations can now set a reasoning effort level (Low, Medium, High, Extra High, Max) from the Configuration panel, matching the in-session effort picker; unset leaves it at the default
 - Default session view — the layout is now a fixed frame that fills the window instead of a scrolling page: reports no longer sit inside a scrollbar within a scrollbar, and the view makes better use of wide screens
@@ -53,6 +54,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Crons and webhooks now remember whether they were switched on for each repo and turn themselves back on after a restart, instead of silently going quiet until you noticed and re-enabled them
 - Clicking the Crons and Webhooks toggles in quick succession could undo one of the clicks, leaving the wrong automation switched on — fixed
 - Launching a session from a GitHub issue, pull request, discussion, or tag ignored the effort level chosen in the launch dialog and always ran at the default — fixed
+- Cost detail view could understate a session's real token usage by a wide margin when sub-agents were involved — the headline now counts tokens across the whole session, not just the main agent loop
+- Provenance markers on a session's turns (e.g. "from peer", "scheduled") now survive a page reload instead of disappearing after the fact
+- Two error states — a temporarily overloaded service and an account placed on hold — now show a proper message in the transcript instead of a generic "Unknown error"
 
 ## [0.6.0] - 2026-07-08
 

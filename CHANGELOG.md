@@ -29,6 +29,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Improved
 
+- New session modal — model and reasoning effort are now one control instead of two, so picking how much thinking to buy is a single decision; Worktree and Existing are now one option (create a new worktree or pick one already checked out); and Tool restrictions and Limits moved into Advanced while Output style got its own row up top
 - Neural Pulse — reworked into a token-sized orbit constellation: each prompt anchors a hub with its thinking and tool calls orbiting it, orb size now scales with token usage (sub-agent orbs grow live as they work), and the layout stays stable as the session grows, with lit-sphere orbs, spawn animations, and a nebula backdrop
 - Transcript clarity — responses cut short by an interrupt now carry an **(interrupted)** marker so you know they may be incomplete; turns fired by a scheduled task are tagged **(scheduled)** and turns triggered by another of your sessions sending a message are tagged **(from peer)**, both at session end; Bash commands that hit their timeout and were moved to the background show an "auto-backgrounded" note; and a sub-agent waiting out a rate limit now shows a "retrying" line instead of looking hung
 - Slash command palette now marks commands that are bound to your local terminal, so you know before running one that it may behave differently inside a session

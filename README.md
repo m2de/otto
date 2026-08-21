@@ -62,7 +62,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Follow-up message queueing while agents are working
 - Prompt suggestions, slash command autocomplete, and drag-and-drop file attachments — any file type, not just images; Otto reads the file where it lives, no copying required
 - Provider profiles — configure and switch between API providers, with environment isolation and auto-detection of existing credentials
-- Change model, permission mode, reasoning effort, and thinking on/off mid-session
+- Change model, permission mode, reasoning effort, thinking on/off, and output style mid-session
 - Review a plan right where you read it — highlight any passage to leave a note pinned beside it, instead of a separate review dialog. When approving, pick the implementation permission mode, reasoning effort, and (optionally) a different model — so you can plan with Opus and build with Sonnet on a fresh context window. Clear context is also available mid-session from the sidebar.
 
 ### Visual Previews

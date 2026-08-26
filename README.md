@@ -139,6 +139,13 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Add marketplace sources from GitHub, npm, git, URL, file, or directory
 - Trust and security controls: strict mode, blocked sources, and custom trust messages
 
+### Extensions
+
+- Add your own pages, session or dashboard panels, and agent tools to Otto — no fork required
+- Manage extensions from a dedicated page: install, enable, disable, and see what each one changes before trusting it
+- Global extensions apply everywhere; per-project extensions ask for your explicit consent, re-prompted whenever the code changes
+- Built with Otto's own UI kit and theming, so custom pages and panels look native
+
 ### Built-In Tools
 
 - In-app feedback tool — annotate UI elements and submit bug reports directly from the dashboard

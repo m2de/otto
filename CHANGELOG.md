@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- **Extensions** — add your own pages, panels, and agent tools to Otto without forking it. Install from a dedicated Extensions page, either globally or per project; project-scoped extensions and anything that runs server-side code ask for your explicit consent first
 - Output styles — pick how Claude writes (Default, Concise, Explanatory, Learning, or a custom style from `~/.claude/output-styles/`) when launching a session, and switch it mid-session from the status bar, same as model and reasoning effort
 - **Container sessions** — a new isolation mode alongside worktrees: each session runs in its own environment with its own ports and dependencies, so multiple agents can run dev servers at the same time without clashing. macOS only, and requires a one-off `container system start`
 - Five brand themes, each in dark and light, switchable from a picker in the header — your choice persists across reloads

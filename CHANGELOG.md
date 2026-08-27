@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- Agent orchestration — an agent can now check what a session (its own, or one it spawned) has cost so far — dollars, tokens, and turns — so it can judge whether more work is worth the spend, or report its cost back to whoever asked it to do the work
 - **Extensions** — add your own pages, panels, and agent tools to Otto without forking it. Install from a dedicated Extensions page, either globally or per project; project-scoped extensions and anything that runs server-side code ask for your explicit consent first
 - Output styles — pick how Claude writes (Default, Concise, Explanatory, Learning, or a custom style from `~/.claude/output-styles/`) when launching a session, and switch it mid-session from the status bar, same as model and reasoning effort
 - Plan approval — pick an output style when approving a plan, alongside permission mode, reasoning effort, and model, so implementation can pick up in a different voice than planning did

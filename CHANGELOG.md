@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - **Extensions** — add your own pages, panels, and agent tools to Otto without forking it. Install from a dedicated Extensions page, either globally or per project; project-scoped extensions and anything that runs server-side code ask for your explicit consent first
 - Output styles — pick how Claude writes (Default, Concise, Explanatory, Learning, or a custom style from `~/.claude/output-styles/`) when launching a session, and switch it mid-session from the status bar, same as model and reasoning effort
+- Plan approval — pick an output style when approving a plan, alongside permission mode, reasoning effort, and model, so implementation can pick up in a different voice than planning did
 - **Container sessions** — a new isolation mode alongside worktrees: each session runs in its own environment with its own ports and dependencies, so multiple agents can run dev servers at the same time without clashing. macOS only, and requires a one-off `container system start`
 - Five brand themes, each in dark and light, switchable from a picker in the header — your choice persists across reloads
 - Attach files to a prompt — drag files onto the composer, paste them, or use the paperclip picker; any file type is supported, not just images. Files are referenced by their real location so Claude reads them in place with no copying, and can grep or re-read them if they change

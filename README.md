@@ -141,7 +141,8 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 
 ### Extensions
 
-- Add your own pages, session or dashboard panels, and agent tools to Otto — no fork required
+- Add your own pages, UI components placed anywhere in Otto's interface, and agent tools — no fork required
+- Point at where in Otto you want something to appear, describe what it should do, and hand it to an agent to build — or install a ready-made extension
 - Manage extensions from a dedicated page: install, enable, disable, and see what each one changes before trusting it
 - Global extensions apply everywhere; per-project extensions ask for your explicit consent, re-prompted whenever the code changes
 - Built with Otto's own UI kit and theming, so custom pages and panels look native

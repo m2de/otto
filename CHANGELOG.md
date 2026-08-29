@@ -9,7 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - Agent orchestration — an agent can now check what a session (its own, or one it spawned) has cost so far — dollars, tokens, and turns — so it can judge whether more work is worth the spend, or report its cost back to whoever asked it to do the work
-- **Extensions** — add your own pages, panels, and agent tools to Otto without forking it. Install from a dedicated Extensions page, either globally or per project; project-scoped extensions and anything that runs server-side code ask for your explicit consent first
+- **Extensions** — add your own pages, agent tools, and UI components placed anywhere in Otto's interface, without forking it. Point at the region you want, describe what belongs there, and hand it to an agent to build — or install a ready-made extension from a dedicated Extensions page, either globally or per project; project-scoped extensions and anything that runs server-side code ask for your explicit consent first
 - Output styles — pick how Claude writes (Default, Concise, Explanatory, Learning, or a custom style from `~/.claude/output-styles/`) when launching a session, and switch it mid-session from the status bar, same as model and reasoning effort
 - Plan approval — pick an output style when approving a plan, alongside permission mode, reasoning effort, and model, so implementation can pick up in a different voice than planning did
 - **Container sessions** — a new isolation mode alongside worktrees: each session runs in its own environment with its own ports and dependencies, so multiple agents can run dev servers at the same time without clashing. macOS only, and requires a one-off `container system start`

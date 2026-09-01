@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- **Orchestrator agent** — Otto now ships a predefined agent type, Orchestrator, built to run as a session's main agent: it delegates as much of the work as possible to sub-agents (choosing their models and reasoning effort itself) while keeping its own context focused on decisions and synthesis. Pick it from the New Session agent-type picker
 - Agent orchestration — an agent can now check what a session (its own, or one it spawned) has cost so far — dollars, tokens, and turns — so it can judge whether more work is worth the spend, or report its cost back to whoever asked it to do the work
 - **Extensions** — add your own pages, agent tools, and UI components placed anywhere in Otto's interface, without forking it. Point at the region you want, describe what belongs there, and hand it to an agent to build — or install a ready-made extension from a dedicated Extensions page, either globally or per project; project-scoped extensions and anything that runs server-side code ask for your explicit consent first
 - Output styles — pick how Claude writes (Default, Concise, Explanatory, Learning, or a custom style from `~/.claude/output-styles/`) when launching a session, and switch it mid-session from the status bar, same as model and reasoning effort

@@ -35,7 +35,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Sessions requiring human input are surfaced at the top automatically
 - Session pinning, forking, renaming, and history replay
 - Filter and search across all sessions
-- Agent orchestration — agents can spawn child sessions to delegate work, send messages between sessions to coordinate, and check what a session has cost so far to judge whether more work is worth it
+- Agent orchestration — agents can spawn child sessions to delegate work, send messages between sessions to coordinate, and check what a session has cost so far to judge whether more work is worth it. A bundled **Orchestrator** agent type ships out of the box — pick it as a session's main agent to have it delegate work to sub-agents itself while it stays focused on synthesising the result
 
 ### Real-Time Transcripts
 

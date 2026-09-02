@@ -46,6 +46,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - GitHub panel — typing a number in the filter box (with or without a leading `#`) now jumps straight to that issue, PR, or discussion, with exact matches ranked first; text search still works as before, and falls back to it if no number matches
 - Composer and status bar — the prompt box and status row read as one calmer surface: pinned commands moved into the composer's own footer next to Send, Stop/Resume moved up onto the status row so it ends in an action rather than trailing off, and mode/model/effort controls now show as plain text that only gains colour and a surface on hover — so colour is reserved for things that need attention
 - Visual previews — options and their preview now sit side by side instead of stacked, so you can compare choices and the mockup without scrolling. Previews render at their natural height instead of being cropped, and light-background designs now show up with readable dark text instead of being forced into unreadable light text
+- In-app browser — when an agent checks its own work on a page, it now reads the page as a lightweight structured summary of what's on screen instead of always taking a screenshot, making browser-heavy verification noticeably cheaper while a screenshot is still taken whenever the question is genuinely visual
 
 ### Fixed
 
@@ -67,6 +68,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Cost detail view could understate a session's real token usage by a wide margin when sub-agents were involved — the headline now counts tokens across the whole session, not just the main agent loop
 - Provenance markers on a session's turns (e.g. "from peer", "scheduled") now survive a page reload instead of disappearing after the fact
 - Two error states — a temporarily overloaded service and an account placed on hold — now show a proper message in the transcript instead of a generic "Unknown error"
+- In-app browser — if an agent typed into a page while the browser panel wasn't the focused part of the window, those keystrokes could land in whatever text field you were using elsewhere in Otto instead of the page; typing now always lands on the intended field, and your own field and cursor position are restored automatically once the agent's finished
 
 ## [0.6.0] - 2026-07-08
 

@@ -69,7 +69,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Cost detail view could understate a session's real token usage by a wide margin when sub-agents were involved — the headline now counts tokens across the whole session, not just the main agent loop
 - Provenance markers on a session's turns (e.g. "from peer", "scheduled") now survive a page reload instead of disappearing after the fact
 - Two error states — a temporarily overloaded service and an account placed on hold — now show a proper message in the transcript instead of a generic "Unknown error"
-- In-app browser — if an agent typed into a page while the browser panel wasn't the focused part of the window, those keystrokes could land in whatever text field you were using elsewhere in Otto instead of the page; typing now always lands on the intended field, and your own field and cursor position are restored automatically once the agent's finished
+- In-app browser — agent typing into a page no longer touches keyboard focus at all: you can keep typing in Otto's composer while an agent fills in a form or presses a key on a page, and neither disturbs the other
 
 ## [0.6.0] - 2026-07-08
 

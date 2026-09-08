@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- Session presets — save any configuration of the New Session modal (model, effort, permission mode, tool restrictions, and everything else except the prompt itself) as a named preset, apply it the next time you start a session, and optionally mark one as the default so the modal opens with it already applied. Manage presets from the modal itself or from a dedicated page in Settings
 - Auto-compaction control — choose Default, On, or Off per session when creating it, with a draggable meter to set the context window Claude compacts at (100k–1M tokens); switch it on or off mid-session from the status bar pill, or set a global default in Behaviour settings
 - Sub-agent fleet limits — a new **Crew** group in the new-session settings lets you cap how many layers of sub-agents can nest below the main agent, and how many can run at once, so a single prompt can't silently fan out further than you intend
 - **Orchestrator agent** — Otto now ships a predefined agent type, Orchestrator, built to run as a session's main agent: it delegates as much of the work as possible to sub-agents (choosing their models and reasoning effort itself) while keeping its own context focused on decisions and synthesis. Pick it from the New Session agent-type picker

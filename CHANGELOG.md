@@ -75,6 +75,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Themes now reach every corner of the interface — code blocks in the transcript used to stay dark regardless of theme, and status colours (success, error) were shared across themes instead of matching each one; both now re-tint properly, including in light mode
 - In-app browser — a screenshot of an element could come back blank or cropped from the wrong spot once the page had been scrolled or zoomed; captures are now positioned correctly regardless of scroll position or zoom level
 - Crons and webhooks now remember whether they were switched on for each repo and turn themselves back on after a restart, instead of silently going quiet until you noticed and re-enabled them
+- Sessions run in a worktree no longer disappear from a repo's history after restarting Otto — they now show up in the Inactive list alongside sessions run in the main checkout
 - Clicking the Crons and Webhooks toggles in quick succession could undo one of the clicks, leaving the wrong automation switched on — fixed
 - Launching a session from a GitHub issue, pull request, discussion, or tag ignored the effort level chosen in the launch dialog and always ran at the default — fixed
 - Cost detail view could understate a session's real token usage by a wide margin when sub-agents were involved — the headline now counts tokens across the whole session, not just the main agent loop

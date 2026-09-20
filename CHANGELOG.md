@@ -82,6 +82,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Two error states — a temporarily overloaded service and an account placed on hold — now show a proper message in the transcript instead of a generic "Unknown error"
 - In-app browser — agent typing into a page no longer touches keyboard focus at all: you can keep typing in Otto's composer while an agent fills in a form or presses a key on a page, and neither disturbs the other
 - Effort picker — when a workspace setting caps the reasoning effort level, levels above the cap now show dimmed and unclickable instead of letting you pick one the session would silently run at a lower level anyway
+- Session cost could drop instead of climb after resuming a session or restarting Otto, and clearing a session's context could leave it showing a stale figure carried over from before the clear — the total shown now only ever grows within a session's current life, and starts a fresh, accurate count the moment you clear. The cost detail view's per-model breakdown, which could show $0 against a model that was actually used, and its token counts, which could still miss sub-agent work in some cases, are now both accurate
 
 ## [0.6.0] - 2026-07-08
 

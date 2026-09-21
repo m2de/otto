@@ -60,6 +60,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- Route Book — after resuming a session, act counts and cost now match Centre Ring instead of disagreeing: a resumed session no longer shows one long "live" act stretched over the whole history with its cost stuck at $0
 - Route Book — a runaway turn can now be stopped without leaving the view: the foot of the book gained the same controls Centre Ring has (stop, clear context, end session, and change model, effort, or permission mode)
 - Sessions run in a worktree that's since been removed no longer disappear from a repo's history after restarting Otto
 - Default view no longer shows "Over to you" while an agent is still working — this could happen when a session was started by an automation or cron (it looked idle from the moment it started) or when the main turn finished but a sub-agent was still running (now shown as "N sub-agent(s) working" instead)

@@ -60,6 +60,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- Sessions run in a worktree that's since been removed no longer disappear from a repo's history after restarting Otto
 - Default view no longer shows "Over to you" while an agent is still working — this could happen when a session was started by an automation or cron (it looked idle from the moment it started) or when the main turn finished but a sub-agent was still running (now shown as "N sub-agent(s) working" instead)
 - A sub-agent you sent a follow-up message to no longer shows as finished while it's actually back at work — the session now correctly shows it running again until it truly completes
 - Question options with a comma in their label (e.g. "Centred card, heavy scrim") could get scrambled and fail to select or submit correctly — fixed

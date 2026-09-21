@@ -58,6 +58,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Visual previews — options and their preview now sit side by side instead of stacked, so you can compare choices and the mockup without scrolling. Previews render at their natural height instead of being cropped, and light-background designs now show up with readable dark text instead of being forced into unreadable light text
 - In-app browser — when an agent checks its own work on a page, it now reads the page as a lightweight structured summary of what's on screen instead of always taking a screenshot, making browser-heavy verification noticeably cheaper while a screenshot is still taken whenever the question is genuinely visual
 - Sub-agent fleet — when a sub-agent spawns its own sub-agents, they now render as a real tree instead of a flat list, with parentage shown wherever the fleet appears (the Default view's sub-agents card and Crew lane, the sidebar, and the sub-agent detail view). Spawns turned away by a fleet limit now show up too, so a capped fan-out is visibly different from Claude simply choosing not to spawn more
+- Route Book — tokens and cost now update live on every row as a response streams in, instead of only appearing once a turn finishes; sub-agent rows show their own figures too, and the cost rail's totals reconcile against what the roster shows
 
 ### Fixed
 

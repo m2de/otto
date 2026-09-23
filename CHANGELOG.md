@@ -40,6 +40,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Improved
 
+- Session header — Chat, Centre Ring, and Route Book now share one header instead of three slightly different ones: title, phase, and elapsed time on the left, the cost/turn/tool tally and the view switch on the right, at the same width in every view. Chat's old task-prompt popover and its own stop/clear/end buttons are gone — the status bar at the foot of every view already has them
 - New session modal — model and reasoning effort are now one control instead of two, so picking how much thinking to buy is a single decision; Worktree and Existing are now one option (create a new worktree or pick one already checked out); and Tool restrictions and Limits moved into Advanced while Output style got its own row up top
 - Neural Pulse — reworked into a token-sized orbit constellation: each prompt anchors a hub with its thinking and tool calls orbiting it, orb size scales with token usage (sub-agent orbs grow live as they work), overlaps resolve on their own as the graph settles, and the view auto-fits to keep a growing session in frame until you pan or zoom yourself, with lit-sphere orbs, spawn animations, and a nebula backdrop
 - Transcript clarity — responses cut short by an interrupt now carry an **(interrupted)** marker so you know they may be incomplete; turns fired by a scheduled task are tagged **(scheduled)** and turns triggered by another of your sessions sending a message are tagged **(from peer)**, both at session end; Bash commands that hit their timeout and were moved to the background show an "auto-backgrounded" note; and a sub-agent waiting out a rate limit now shows a "retrying" line instead of looking hung
@@ -57,6 +58,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- Plugins — a marketplace added from the terminal with `claude /plugin marketplace add` now shows up in Otto's plugin view, and its plugins can be enabled — previously it was invisible unless it was also registered in a settings file
+- Plugins — adding a private GitHub marketplace no longer silently creates an empty marketplace; Otto now falls back to your GitHub CLI login when no token is configured, and shows a clear error if the repository still can't be reached
 - Route Book — after resuming a session, act counts and cost now match Centre Ring instead of disagreeing: a resumed session no longer shows one long "live" act stretched over the whole history with its cost stuck at $0
 - Route Book — a runaway turn can now be stopped without leaving the view: the foot of the book gained the same controls Centre Ring has (stop, clear context, end session, and change model, effort, or permission mode)
 - Sessions run in a worktree that's since been removed no longer disappear from a repo's history after restarting Otto

@@ -58,6 +58,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- Chat — the live card and each reply's portrait now show the figure matching the session's model, the same casting Centre Ring uses, instead of always showing the ringmaster
 - Plugins — a marketplace added from the terminal with `claude /plugin marketplace add` now shows up in Otto's plugin view, and its plugins can be enabled — previously it was invisible unless it was also registered in a settings file
 - Plugins — adding a private GitHub marketplace no longer silently creates an empty marketplace; Otto now falls back to your GitHub CLI login when no token is configured, and shows a clear error if the repository still can't be reached
 - Route Book — after resuming a session, act counts and cost now match Centre Ring instead of disagreeing: a resumed session no longer shows one long "live" act stretched over the whole history with its cost stuck at $0

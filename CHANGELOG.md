@@ -64,6 +64,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - Sessions no longer get stuck on "running" or show idle too early when a follow-up prompt joins a running turn, or when background tasks finish between turns. Each prompt now settles when its own turn ends
 - Clicking **Run** on a cron automation now tells you what happened — a spinner while it's starting, the session it started with a link to open it, or the reason it was refused (with a one-click fix when it's simply switched off) — instead of no feedback either way
+- Staging changes made outside Otto on macOS — `git add`, `git reset`, or `git restore --staged` in your own terminal — now show up in the Branch changes panel straight away, instead of leaving the Staged / Unstaged lists out of date
 - Cron automations edited, renamed, or deleted outside Otto — by hand in your editor, or by a `git pull` — now take effect straight away, instead of keeping their old schedule until Otto restarted
 - Chat — the live card and each reply's portrait now show the figure matching the session's model, the same casting Centre Ring uses, instead of always showing the ringmaster
 - Chat — the last message could end up hidden behind the composer once pinned commands, a longer draft, or attachments grew it past a fixed clearance; the thread now always clears the composer's actual height

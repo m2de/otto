@@ -60,6 +60,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Fixed
 
 - Clicking **Run** on a cron automation now tells you what happened — a spinner while it's starting, the session it started with a link to open it, or the reason it was refused (with a one-click fix when it's simply switched off) — instead of no feedback either way
+- Cron automations edited, renamed, or deleted outside Otto — by hand in your editor, or by a `git pull` — now take effect straight away, instead of keeping their old schedule until Otto restarted
 - Chat — the live card and each reply's portrait now show the figure matching the session's model, the same casting Centre Ring uses, instead of always showing the ringmaster
 - Chat — the last message could end up hidden behind the composer once pinned commands, a longer draft, or attachments grew it past a fixed clearance; the thread now always clears the composer's actual height
 - Plugins — a marketplace added from the terminal with `claude /plugin marketplace add` now shows up in Otto's plugin view, and its plugins can be enabled — previously it was invisible unless it was also registered in a settings file

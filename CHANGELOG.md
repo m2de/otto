@@ -56,9 +56,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - In-app browser — when an agent checks its own work on a page, it now reads the page as a lightweight structured summary of what's on screen instead of always taking a screenshot, making browser-heavy verification noticeably cheaper while a screenshot is still taken whenever the question is genuinely visual
 - Sub-agent fleet — when a sub-agent spawns its own sub-agents, they now render as a real tree instead of a flat list, with parentage shown wherever the fleet appears (a session's sub-agent cards, the sidebar, and the sub-agent detail view). Spawns turned away by a fleet limit now show up too, so a capped fan-out is visibly different from Claude simply choosing not to spawn more
 - Route Book — tokens and cost now update live on every row as a response streams in, instead of only appearing once a turn finishes; sub-agent rows show their own figures too, and the cost rail's totals reconcile against what the roster shows
+- Permission prompts for MCP tools now say which server is asking and where it came from ("via <server> · <source>"), in Chat, Centre Ring, the modal and the companion app
+- Typing `/clear` now leaves a quiet "Conversation cleared" divider in Chat, a row in Route Book and on the companion, so you can see where the conversation was reset
+- Sub-agents cut short by a restart now show "Interrupted by restart" instead of "Stopped"
 
 ### Fixed
 
+- Sessions no longer get stuck on "running" or show idle too early when a follow-up prompt joins a running turn, or when background tasks finish between turns. Each prompt now settles when its own turn ends
 - Clicking **Run** on a cron automation now tells you what happened — a spinner while it's starting, the session it started with a link to open it, or the reason it was refused (with a one-click fix when it's simply switched off) — instead of no feedback either way
 - Cron automations edited, renamed, or deleted outside Otto — by hand in your editor, or by a `git pull` — now take effect straight away, instead of keeping their old schedule until Otto restarted
 - Chat — the live card and each reply's portrait now show the figure matching the session's model, the same casting Centre Ring uses, instead of always showing the ringmaster

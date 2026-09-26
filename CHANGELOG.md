@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- **Chat** — Claude's suggested next prompt now appears as faint text in the empty composer once a turn closes: Tab to edit it, Enter to send it, or Escape to dismiss it. The composer is also wider, giving you more room to write
 - **Centre Ring** — once a turn closes, Otto now offers his own guess at what to do next as a speech bubble by his side: accept it to send it straight away, edit it first, or dismiss it until the next turn has a new suggestion
 - Session presets — save any configuration of the New Session modal (model, effort, permission mode, tool restrictions, and everything else except the prompt itself) as a named preset, apply it the next time you start a session, and optionally mark one as the default so the modal opens with it already applied. Manage presets from the modal itself or from a dedicated page in Settings
 - Auto-compaction control — choose Default, On, or Off per session when creating it, with a draggable meter to set the context window Claude compacts at (100k–1M tokens); switch it on or off mid-session from the status bar pill, or set a global default in Behaviour settings

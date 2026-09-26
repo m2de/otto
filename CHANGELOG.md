@@ -62,6 +62,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- Reopening a session after restarting Otto, or one you ran outside Otto, now shows its sub-agents again — their cards, nesting, durations, tool counts, and crew count are all rebuilt from history instead of the session looking as if none ever ran
 - Sessions no longer get stuck on "running" or show idle too early when a follow-up prompt joins a running turn, or when background tasks finish between turns. Each prompt now settles when its own turn ends
 - Clicking **Run** on a cron automation now tells you what happened — a spinner while it's starting, the session it started with a link to open it, or the reason it was refused (with a one-click fix when it's simply switched off) — instead of no feedback either way
 - Staging changes made outside Otto on macOS — `git add`, `git reset`, or `git restore --staged` in your own terminal — now show up in the Branch changes panel straight away, instead of leaving the Staged / Unstaged lists out of date

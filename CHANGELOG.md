@@ -41,6 +41,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Improved
 
+- Refresh buttons on the GitHub, Worktrees, Permissions, and Plugins panels now spin and disable themselves until the fresh data has actually arrived, so you can tell a refresh is under way and repeated clicks don't pile up extra requests
 - Session header — Chat, Centre Ring, and Route Book now share one header instead of three slightly different ones: title, phase, and elapsed time on the left, the cost/turn/tool tally and the view switch on the right, at the same width in every view. Chat's old task-prompt popover and its own stop/clear/end buttons are gone — the status bar at the foot of every view already has them
 - New session modal — model and reasoning effort are now one control instead of two, so picking how much thinking to buy is a single decision; Worktree and Existing are now one option (create a new worktree or pick one already checked out); and Tool restrictions and Limits moved into Advanced while Output style got its own row up top
 - Neural Pulse — reworked into a token-sized orbit constellation: each prompt anchors a hub with its thinking and tool calls orbiting it, orb size scales with token usage (sub-agent orbs grow live as they work), overlaps resolve on their own as the graph settles, and the view auto-fits to keep a growing session in frame until you pan or zoom yourself, with lit-sphere orbs, spawn animations, and a nebula backdrop

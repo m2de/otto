@@ -127,6 +127,13 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Live session chips — a project you're not currently viewing shows a chip with its session count if it has an active session, so you can spot activity across your whole workspace at a glance
 - Reorder and remove projects from the switcher — your preferred ordering is remembered across reloads
 
+### Remote Machines
+
+- Run sessions on another machine over SSH — add it by `user@host` or SSH alias, and Otto checks it's ready before setting itself up
+- Switch between your local machine and remote ones from the host switcher; sessions, git and worktrees act on whichever you're on
+- Your local provider credentials are forwarded securely, with one-click refresh
+- Disconnect without stopping the remote Otto, or stop it entirely
+
 ### Plugins & Marketplace
 
 - Unified browse view across all configured marketplaces — installed and available plugins side by side, no dropdown prerequisite

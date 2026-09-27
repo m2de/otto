@@ -130,6 +130,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 ### Remote Machines
 
 - Run sessions on another machine over SSH — add it by `user@host` or SSH alias, and Otto checks it's ready before setting itself up
+- Nothing to install on the remote first — Otto brings its own server and Claude to 64-bit Linux machines (x64 or ARM), checks them against the app's own checksums, and only re-sends them when they've changed
 - Switch between your local machine and remote ones from the host switcher; sessions, git and worktrees act on whichever you're on
 - Your local provider credentials are forwarded securely, with one-click refresh
 - Disconnect without stopping the remote Otto, or stop it entirely

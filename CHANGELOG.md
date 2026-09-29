@@ -69,6 +69,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- Otto no longer uses CPU while sitting idle when one of your projects is a git repository with no commits yet. Such a project made Otto check git dozens of times a second, which also kept macOS's file-watching service busy and drained battery
 - Your project list is now the same every time you open Otto, and in every window. Before, some launches showed a different or empty list, and an out-of-date list could overwrite the one automations and the phone app use. Projects that had ended up split across launches are combined again automatically, without bringing back ones you removed. Each window still remembers its own selected project
 - Changing a session's permission mode mid-session, or approving a plan into a new mode, now sticks after the session goes to sleep or is stopped and resumed. Before, it went back to the mode the session started with. Model and effort changes you make mid-session carry over too
 - Reopening a session after restarting Otto, or one you ran outside Otto, now shows its sub-agents again — their cards, nesting, durations, tool counts, and crew count are all rebuilt from history instead of the session looking as if none ever ran

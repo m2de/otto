@@ -50,6 +50,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Improved
 
+- Links to other sites — GitHub, pull requests, sign-in pages — now open in your default browser instead of a separate Otto window, so your existing logins carry over
 - Starting a session with **Auto-run** now leaves you where you were — the new session appears in the list straight away and gets on with its prompt without pulling you away. **Pre-fill** still takes you to the session so you can edit the draft
 - Refresh buttons on the GitHub, Worktrees, Permissions, and Plugins panels now spin and disable themselves until the fresh data has actually arrived, so you can tell a refresh is under way and repeated clicks don't pile up extra requests
 - Session header — Chat, Centre Ring, and Route Book now share one header instead of three slightly different ones: title, phase, and elapsed time on the left, the cost/turn/tool tally and the view switch on the right, at the same width in every view. Chat's old task-prompt popover and its own stop/clear/end buttons are gone — the status bar at the foot of every view already has them

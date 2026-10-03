@@ -79,6 +79,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- Agent orchestration — messages and briefs sent to a session running in Bypass mode are now delivered when the sender is also in Bypass, instead of being silently held and dropped after five minutes while the session sat on "Generating". When a message is held because the sender's permission mode doesn't match, the session now shows a notice saying so, and another when it's released or dropped, and the session no longer looks stuck
 - When a request to Claude fails for good (an unsupported model, a sign-in problem, a server error), Chat and Centre Ring now show the actual error message as an error, instead of presenting it as Otto's reply followed by a vague "Unknown error". The failed request also no longer resets the context gauge or appears as an extra model call
 - Two copies of Otto forwarding webhooks for the same repo no longer delete each other's GitHub hook. Each copy now only removes hooks it created itself, and if GitHub refuses a new hook because another copy is already forwarding, Otto says so and explains how to remove a leftover hook if nothing else is using it
 - Sign-in refreshes now show in the session — when Claude refreshes your provider credentials (an AWS SSO login on Bedrock, a Google Cloud refresh, or a custom API key helper), the chat shows it starting, any output it prints (including the sign-in URL and code), any error, and when it finished, instead of only the turn's final error

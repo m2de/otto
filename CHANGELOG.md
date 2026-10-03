@@ -76,6 +76,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- Sign-in refreshes now show in the session — when Claude refreshes your provider credentials (an AWS SSO login on Bedrock, a Google Cloud refresh, or a custom API key helper), the chat shows it starting, any output it prints (including the sign-in URL and code), any error, and when it finished, instead of only the turn's final error
 - A session started by another session, or woken by a message from one, no longer stays stuck on "Generating" after its turn has finished
 - While Claude waits to retry a failed request, the live status in Chat, Centre Ring, Stage and the companion app now reads "Retrying after API error · 3/10" instead of "Thinking", and its clock counts the whole wait rather than restarting with each retry
 - A turn that ends because Claude's request kept failing (for example, hitting a rate limit) now shows as failed, with the reason, in Chat's header, Centre Ring and the companion app, instead of "Over to you". You can still send the next prompt straight away

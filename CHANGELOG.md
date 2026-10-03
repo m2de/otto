@@ -75,6 +75,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- When Claude reads an image or PDF, the result now shows as a short placeholder naming the file type and size, instead of a wall of raw encoded data in Chat, the Route Book and the companion app
 - A webhook's concurrency limit now applies per pull request, issue or discussion rather than to the whole automation, so reviewing one PR no longer queues the review of an unrelated PR opened at the same time. Two runs for the same PR still wait their turn
 - Pressing Escape with a menu or dialog open now just closes it, rather than also navigating away
 - Otto no longer uses CPU while sitting idle when one of your projects is a git repository with no commits yet. Such a project made Otto check git dozens of times a second, which also kept macOS's file-watching service busy and drained battery

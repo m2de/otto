@@ -75,6 +75,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- Agent orchestration — when an agent spawns a session, the new session's first message now shows as coming from the agent that spawned it, the same as later messages between them, instead of looking like something you typed yourself
 - Chat now shows retries on a turn that used no tools: while Claude retries a failing request, the working card lists each retry as it happens, and once the turn finishes it collapses to a short summary with the retries one click away, instead of showing only your prompt and "Thinking"
 - When Claude reads an image or PDF, the result now shows as a short placeholder naming the file type and size, instead of a wall of raw encoded data in Chat, the Route Book and the companion app
 - A webhook's concurrency limit now applies per pull request, issue or discussion rather than to the whole automation, so reviewing one PR no longer queues the review of an unrelated PR opened at the same time. Two runs for the same PR still wait their turn

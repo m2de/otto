@@ -51,6 +51,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Improved
 
+- Usage-limit notices now say how much of which limit you've used and when it resets — for example "86% of your five-hour limit used · resets 15:30" or "Weekly limit reached · resets Tue 09:00" — instead of a generic warning, and the same notice no longer appears twice in one turn
 - Links to other sites — GitHub, pull requests, sign-in pages — now open in your default browser instead of a separate Otto window, so your existing logins carry over
 - Starting a session with **Auto-run** now leaves you where you were — the new session appears in the list straight away and gets on with its prompt without pulling you away. **Pre-fill** still takes you to the session so you can edit the draft
 - Refresh buttons on the GitHub, Worktrees, Permissions, and Plugins panels now spin and disable themselves until the fresh data has actually arrived, so you can tell a refresh is under way and repeated clicks don't pile up extra requests

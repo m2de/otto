@@ -89,6 +89,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - **Remote machines** — if Otto quits unexpectedly, the connections it had open to remote machines no longer linger in the background holding ports. Otto tidies them up the next time it starts, and never touches anything that isn't one of its own leftover connections
 - Security — other web pages open in your browser can no longer connect to Otto running on your machine and control your sessions. Otto now only accepts connections from its own app, the companion and local development addresses
 - Remote machines — starting Otto on a remote machine now checks the version that's actually running there, not just the one installed. If an earlier restart didn't take, Otto restarts it on the current version instead of quietly connecting to the old one. The first start after updating restarts a remote Otto once, which ends the sessions running on it
+- Remote machines — you can now stop Otto on a remote machine while it's disconnected or after a failed connection, without having to reconnect first
 - Permissions settings — conflict warnings now follow the order Claude actually checks rules in (deny, then ask, then allow). A broad allow rule is no longer reported as hiding a narrower deny or ask rule, and a clash between two behaviours for the same rule now says which one wins
 - Permissions settings — making several rule changes at once, such as bulk delete or moving a rule to another behaviour, no longer loses some of them
 

@@ -85,6 +85,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- Centre Ring — the crew count no longer counts finished sub-agents twice. Opening the Ring after a run, reloading the page or reconnecting could show "12 crew done" for six sub-agents
 - Chat — the output of `/cost` now shows in the thread as command output, in a monospace block with its line breaks kept. Before, it appeared as Claude's reply, or was folded away inside the working card
 - MCP forms in Chat — when an MCP server asks you to fill in a form, its card in Chat (and Route Book) now has an **Open the form** button that opens the form itself. Before, the card pointed to a control that didn't exist and you could only decline or cancel
 - Chat — a compaction that happens partway through a turn is now drawn where it happened, after the work and reply that came before it, instead of always above the prompt. The divider, and the matching row in Route Book, now show how much context was compacted (e.g. "Context compacted · auto · 990k → 863 tokens")

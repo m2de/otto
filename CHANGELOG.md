@@ -80,6 +80,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- Chat — the output of `/cost` now shows in the thread as command output, in a monospace block with its line breaks kept. Before, it appeared as Claude's reply, or was folded away inside the working card
 - MCP forms in Chat — when an MCP server asks you to fill in a form, its card in Chat (and Route Book) now has an **Open the form** button that opens the form itself. Before, the card pointed to a control that didn't exist and you could only decline or cancel
 - Chat — a compaction that happens partway through a turn is now drawn where it happened, after the work and reply that came before it, instead of always above the prompt. The divider, and the matching row in Route Book, now show how much context was compacted (e.g. "Context compacted · auto · 990k → 863 tokens")
 - Agent orchestration — messages and briefs sent to a session running in Bypass mode are now delivered when the sender is also in Bypass, instead of being silently held and dropped after five minutes while the session sat on "Generating". When a message is held because the sender's permission mode doesn't match, the session now shows a notice saying so, and another when it's released or dropped, and the session no longer looks stuck

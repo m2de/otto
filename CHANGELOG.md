@@ -86,6 +86,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- Security — other web pages open in your browser can no longer connect to Otto running on your machine and control your sessions. Otto now only accepts connections from its own app, the companion and local development addresses
 - Permissions settings — conflict warnings now follow the order Claude actually checks rules in (deny, then ask, then allow). A broad allow rule is no longer reported as hiding a narrower deny or ask rule, and a clash between two behaviours for the same rule now says which one wins
 - Permissions settings — making several rule changes at once, such as bulk delete or moving a rule to another behaviour, no longer loses some of them
 

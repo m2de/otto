@@ -55,6 +55,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Improved
 
+- **Clearer session notices** — API retries now read plainly ("Authentication failed (401) · retry 7 of 10 in 34s"), and Centre Ring names the error behind a retry so a persistent sign-in failure no longer looks like a brief overload. Web searches show as a card with their links and summary, MCP tools are labelled by server and tool name, memory recalls name the files, and answered MCP forms show each submitted value beside its label (or "Declined"/"Cancelled")
+- **Centre Ring** — crew chips are labelled with what each sub-agent is doing, nested sub-agents are drawn as a tree, rate-limit warnings now appear on stage, and "Latest update" reads "Conversation cleared" after `/clear`
+
 - Usage-limit notices now say how much of which limit you've used and when it resets — for example "86% of your five-hour limit used · resets 15:30" or "Weekly limit reached · resets Tue 09:00" — instead of a generic warning, and the same notice no longer appears twice in one turn
 - Links to other sites — GitHub, pull requests, sign-in pages — now open in your default browser instead of a separate Otto window, so your existing logins carry over
 - Starting a session with **Auto-run** now leaves you where you were — the new session appears in the list straight away and gets on with its prompt without pulling you away. **Pre-fill** still takes you to the session so you can edit the draft

@@ -82,8 +82,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Permission prompts for MCP tools now say which server is asking and where it came from ("via <server> · <source>"), in Chat, Centre Ring, the modal and the companion app
 - Typing `/clear` now leaves a quiet "Conversation cleared" divider in Chat, a row in Route Book and on the companion, so you can see where the conversation was reset
 - Sub-agents cut short by a restart now show "Interrupted by restart" instead of "Stopped"
+- **Ask rules in Permissions settings** — alongside allow and deny, you can now add, list, filter, group ("Ask first") and edit rules that make Claude ask before using a tool. Ask rules already in your settings files now show up too. The Add Rule wizard offers Allow / Ask / Deny, and the bulk "Flip" action is now "Set to…" so you can move selected rules to any of the three
 
 ### Fixed
+
+- Permissions settings — conflict warnings now follow the order Claude actually checks rules in (deny, then ask, then allow). A broad allow rule is no longer reported as hiding a narrower deny or ask rule, and a clash between two behaviours for the same rule now says which one wins
+- Permissions settings — making several rule changes at once, such as bulk delete or moving a rule to another behaviour, no longer loses some of them
 
 - Centre Ring — the crew count no longer counts finished sub-agents twice. Opening the Ring after a run, reloading the page or reconnecting could show "12 crew done" for six sub-agents
 - Chat — the output of `/cost` now shows in the thread as command output, in a monospace block with its line breaks kept. Before, it appeared as Claude's reply, or was folded away inside the working card

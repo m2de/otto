@@ -146,6 +146,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - See what each plugin ships before installing — skill, agent, command, hook, MCP, and LSP counts on every card, with a full named breakdown and descriptions on the detail page
 - Dedicated plugin detail pages with author, repository, licence, and keywords surfaced from marketplace manifests
 - Enable, disable, and configure plugins at user, project, or local level — inline from the detail page
+- See and manage MCP servers — status, tools and errors per session, with reconnect, sign-in and on/off; add, edit, move or remove servers for you, a project, a repo's `.mcp.json`, or from plugins
 - Add marketplace sources from GitHub, npm, git, URL, file, or directory
 - Trust and security controls: strict mode, blocked sources, and custom trust messages
 

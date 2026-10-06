@@ -132,7 +132,8 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 
 - Run sessions on another machine over SSH — add it by `user@host` or SSH alias, and Otto checks it's ready before setting itself up
 - Nothing to install on the remote first — Otto brings its own server and Claude to 64-bit Linux machines (x64 or ARM), checks them against the app's own checksums, and only re-sends them when they've changed
-- See sessions from every connected machine in one window — remote ones sit under "On other machines" on Stage with a machine badge, and you can watch and prompt them as if they were local
+- See sessions from every connected machine in one window, and watch and prompt them as if they were local
+- A repo checked out on several machines is one project — its remote sessions join the local project's poster and Stage sections with a machine badge, matched on the git origin. Repos you only have elsewhere get their own poster and sit under "Other repos" on Stage
 - Start new sessions on any connected machine — New Session asks for the machine first, then a project checked out there, and remembers the last one you used
 - Clone a repo straight onto a remote machine from New Session, using that machine's own git credentials
 - Click a remote session's machine chip to browse that machine's worktrees and GitHub, and start sessions there

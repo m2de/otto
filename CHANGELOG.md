@@ -92,6 +92,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- **Bedrock model names** — a Bedrock model set up without a display name no longer shows its full inference-profile ARN in the composer's model picker, which squeezed the space you type in. It now shows the model family (such as "Opus") or "Bedrock Model", and any long model name is shortened with the full name on hover
 - **Remote machines** — if Otto quits unexpectedly, the connections it had open to remote machines no longer linger in the background holding ports. Otto tidies them up the next time it starts, and never touches anything that isn't one of its own leftover connections
 - Security — other web pages open in your browser can no longer connect to Otto running on your machine and control your sessions. Otto now only accepts connections from its own app, the companion and local development addresses
 - Remote machines — starting Otto on a remote machine now checks the version that's actually running there, not just the one installed. If an earlier restart didn't take, Otto restarts it on the current version instead of quietly connecting to the old one. The first start after updating restarts a remote Otto once, which ends the sessions running on it

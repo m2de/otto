@@ -137,6 +137,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - Start new sessions on any connected machine — New Session asks for the machine first, then a project checked out there, and remembers the last one you used
 - Clone a repo straight onto a remote machine from New Session, using that machine's own git credentials
 - Click a remote session's machine chip to browse that machine's worktrees and GitHub, and start sessions there
+- A project's cost on Stage adds up its spend on every machine it's checked out on, even after a remote Otto restarts. A machine that can't answer is named, with its last-known figure kept where Otto has one
 - The Machines menu in the header lists this Mac and every remote with its status, live sessions and how many need you; pick one to show only its sessions on Stage
 - If a machine drops off, its sessions stay listed, dimmed at their last-known state, with actions paused until it reconnects — one Reconnect brings it straight back
 - Your local provider credentials are forwarded securely, with one-click refresh

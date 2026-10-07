@@ -140,6 +140,7 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - The Machines menu in the header lists this Mac and every remote with its status, live sessions and how many need you; pick one to show only its sessions on Stage
 - If a machine drops off, its sessions stay listed, dimmed at their last-known state, with actions paused until it reconnects — one Reconnect brings it straight back
 - Your local provider credentials are forwarded securely, with one-click refresh
+- On your phone, remote sessions carry their machine's name, and you can start a new session on any connected machine
 - Your phone gets push notifications for permission requests and questions from remote sessions too, naming the machine — even with the desktop window closed
 - Disconnect without stopping the remote Otto, or stop it entirely
 

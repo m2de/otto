@@ -140,6 +140,8 @@ Otto works with the Anthropic API, Amazon Bedrock, Google Vertex AI, and Azure A
 - A project's cost on Stage adds up its spend on every machine it's checked out on, even after a remote Otto restarts. A machine that can't answer is named, with its last-known figure kept where Otto has one
 - The Machines menu in the header lists this Mac and every remote with its status, live sessions and how many need you; pick one to show only its sessions on Stage
 - With a machine picked, Settings, Memory, Hooks and Plugins show that machine's own permissions, CLAUDE.md, memory, hooks, plugins and MCP servers, and changes are saved there
+- With a machine picked, Worktrees and GitHub follow it too, and every machine page can switch to any repo on that machine — including ones you only have there
+- Add and remove the folders a remote machine scans for projects, straight from New Session
 - If a machine drops off, its sessions stay listed, dimmed at their last-known state, with actions paused until it reconnects — one Reconnect brings it straight back
 - Your local provider credentials are forwarded securely, with one-click refresh
 - On your phone, remote sessions carry their machine's name, and you can start a new session on any connected machine

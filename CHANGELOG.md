@@ -103,6 +103,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- **Haiku 5.5 and Sonnet 5.5 costs** — sessions using Haiku 5.5 showed costs around 50 times too high, and Sonnet 5.5 around 2.5 times, because both were priced at a default rate. They're now charged at their published prices, including Haiku 5.5's higher rate for very long prompts. Since Haiku names every session, most sessions' totals come down. Costs already recorded before this fix keep their old figures
 - **Bedrock model names** — a Bedrock model set up without a display name no longer shows its full inference-profile ARN in the composer's model picker, which squeezed the space you type in. It now shows the model family (such as "Opus") or "Bedrock Model", and any long model name is shortened with the full name on hover
 - **Remote machines** — if Otto quits unexpectedly, the connections it had open to remote machines no longer linger in the background holding ports. Otto tidies them up the next time it starts, and never touches anything that isn't one of its own leftover connections
 - Security — other web pages open in your browser can no longer connect to Otto running on your machine and control your sessions. Otto now only accepts connections from its own app, the companion and local development addresses

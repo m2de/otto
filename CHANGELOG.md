@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- **Background commands in Chat** — a command Claude runs in the background now shows a running indicator with its elapsed time. Expand it to watch the output as it grows, with a note when older output has been cut. Once the command finishes you still see its final output, even after the session has gone to sleep or ended
 - **Automations never wait on an approval** — cron and webhook sessions now run with approval prompts switched off, so they can't stall waiting for someone who isn't there. Anything that would have asked is denied and noted in the transcript, and an automation in plan mode stops at its written plan. Open such a session in Chat or on the phone's Peek and a "No approvals" chip explains why
 - **Warnings and plugin errors in the transcript** — warnings from Claude now appear as notices in the conversation, and plugins that failed to load are listed once at the start of a session instead of their tools silently going missing
 - Sub-agent fleet — sub-agents started by nested agents now sit under their real parent instead of showing up as separate top-level agents
